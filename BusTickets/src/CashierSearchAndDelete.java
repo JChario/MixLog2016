@@ -40,7 +40,7 @@ import javax.swing.border.EtchedBorder;
 import javax.swing.ListSelectionModel;
 import javax.swing.JTextArea;
 import java.awt.Font;
-public class AdminScreen {
+public class CashierSearchAndDelete {
 
 	private JFrame frame;
 	private JTextField UserUsername;
@@ -57,7 +57,7 @@ public class AdminScreen {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AdminScreen window = new AdminScreen();
+					CashierSearchAndDelete window = new CashierSearchAndDelete();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -69,7 +69,7 @@ public class AdminScreen {
 	/**
 	 * Create the application.
 	 */
-	public AdminScreen() {
+	public CashierSearchAndDelete() {
 		initialize();
 	}
 

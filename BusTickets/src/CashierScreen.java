@@ -53,6 +53,11 @@ import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
 import java.awt.event.InputEvent;
 import java.awt.Insets;
+import javax.swing.JTextArea;
+import javax.swing.JInternalFrame;
+import javax.swing.JDesktopPane;
+import javax.swing.JToolBar;
+import javax.swing.JLayeredPane;
 
 
 public class CashierScreen {
@@ -60,6 +65,7 @@ public class CashierScreen {
 	public static final JCalendar calendar1 = new JCalendar();
 	public static final DateFormat df = new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH);
 	public static final JCheckBox invoice = new JCheckBox("\u03A4\u03B9\u03BC\u03BF\u03BB\u03CC\u03B3\u03B9\u03BF");
+	public static final JCheckBox receipt = new JCheckBox("\u0391\u03C0\u03CC\u03B4\u03B5\u03B9\u03BE\u03B7");
 	private JFrame frame;
 	private JTextField returnDateField;
 	private JTextField departureDateField;
@@ -102,41 +108,18 @@ public class CashierScreen {
 		
 		JLabel lblH_1 = new JLabel("H\u03BC\u03B5\u03C1\u03BF\u03BC\u03B7\u03BD\u03AF\u03B1 \u0395\u03C0\u03B9\u03C3\u03C4\u03C1\u03BF\u03C6\u03AE\u03C2");
 		lblH_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblH_1.setBounds(383, 238, 177, 14);
+		lblH_1.setBounds(477, 238, 177, 14);
 		frame.getContentPane().add(lblH_1);
 		
-		JMenuBar menuBar = new JMenuBar();
-		menuBar.setBackground(Color.LIGHT_GRAY);
-		menuBar.setBounds(0, 0, 97, 21);
-		frame.getContentPane().add(menuBar);
-		
-		JMenu menu = new JMenu("\u0391\u03BD\u03B1\u03B6\u03AE\u03C4\u03B7\u03C3\u03B7");
-		menu.setBackground(Color.LIGHT_GRAY);
-		menuBar.add(menu);
-		
-		JMenuItem nameSearch = new JMenuItem("\u038C\u03BD\u03BF\u03BC\u03B1");
-		nameSearch.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String message = "Selected : "+nameSearch.getText();
-				JOptionPane.showConfirmDialog(frame, message);
-				JOptionPane.showInputDialog(message);
+		JButton btnNewButton = new JButton("\u0391\u03BD\u03B1\u03B6\u03AE\u03C4\u03B7\u03C3\u03B7 - \u0394\u03B9\u03B1\u03B3\u03C1\u03B1\u03C6\u03AE");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				CashierSearchAndDelete.AdminScreen();
+				
 			}
 		});
-		nameSearch.setIcon(null);
-		nameSearch.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_MASK | InputEvent.ALT_MASK));
-		menu.add(nameSearch);
-		
-		JMenuItem lastNameSearch = new JMenuItem("\u0395\u03C0\u03AF\u03B8\u03B5\u03C4\u03BF");
-		lastNameSearch.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_MASK | InputEvent.ALT_MASK));
-		menu.add(lastNameSearch);
-		
-		JMenuItem certificateSearch = new JMenuItem("\u0391.\u03A4.");
-		certificateSearch.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_MASK | InputEvent.ALT_MASK));
-		menu.add(certificateSearch);
-		
-		JMenuItem ticketNumberSearch = new JMenuItem("\u0391\u03C1\u03B9\u03B8\u03BC\u03CC\u03C2 \u0395\u03B9\u03C3\u03B7\u03C4\u03B7\u03C1\u03AF\u03BF\u03C5");
-		ticketNumberSearch.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_T, InputEvent.CTRL_MASK | InputEvent.ALT_MASK));
-		menu.add(ticketNumberSearch);
+		btnNewButton.setBounds(259, 437, 177, 23);
+		frame.getContentPane().add(btnNewButton);
 	}
 
 	/**
@@ -156,14 +139,13 @@ public class CashierScreen {
 	}
 	private void initialize() {
 		frame = new JFrame();
-		frame.getContentPane().setBackground(new Color(176, 196, 222));
-		frame.setBounds(100, 100, 596, 493);
+		frame.setBounds(100, 100,690, 510);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblWelcomeCashier = new JLabel("Welcome Cashier");
 		lblWelcomeCashier.setHorizontalAlignment(SwingConstants.CENTER);
-		lblWelcomeCashier.setBounds(10, 11, 577, 27);
+		lblWelcomeCashier.setBounds(208, 11, 262, 27);
 		frame.getContentPane().add(lblWelcomeCashier);
 		
 		
@@ -217,7 +199,7 @@ public class CashierScreen {
 		returnDateField.setHorizontalAlignment(SwingConstants.CENTER);
 		returnDateField.setEditable(false);
 		returnDateField.setEnabled(false);
-		returnDateField.setBounds(383, 261, 177, 20);
+		returnDateField.setBounds(477, 261, 177, 20);
 		frame.getContentPane().add(returnDateField);
 		returnDateField.setColumns(10);
 		
@@ -233,7 +215,7 @@ public class CashierScreen {
 		JLabel label_2 = new JLabel("\u0395\u03C0\u03B9\u03C3\u03C4\u03C1\u03BF\u03C6\u03AE");
 		label_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
-		label_2.setBounds(386, 49, 177, 27);
+		label_2.setBounds(480, 49, 177, 27);
 		frame.getContentPane().add(label_2);
 		calendar1.getMonthChooser().getComboBox().setEnabled(false);
 		calendar1.getYearChooser().getSpinner().setEnabled(false);
@@ -242,7 +224,7 @@ public class CashierScreen {
 		calendar1.setBackground(Color.BLACK);
 		
 		
-		calendar1.setBounds(386, 74, 177, 153);
+		calendar1.setBounds(480, 74, 177, 153);
 		frame.getContentPane().add(calendar1);
 		
 		JCheckBox chckbxNewCheckBox = new JCheckBox("\u039C\u03B5 \u03B5\u03C0\u03B9\u03C3\u03C4\u03C1\u03BF\u03C6\u03AE");
@@ -271,7 +253,7 @@ public class CashierScreen {
 			}
 		});
 		chckbxNewCheckBox.setHorizontalAlignment(SwingConstants.CENTER);
-		chckbxNewCheckBox.setBounds(383, 288, 105, 23);
+		chckbxNewCheckBox.setBounds(477, 288, 105, 23);
 		frame.getContentPane().add(chckbxNewCheckBox);
 		
 		
@@ -284,96 +266,14 @@ public class CashierScreen {
 				login.setVisible(true);
 			}
 		});
-		btnLogOut.setBounds(471, 422, 89, 23);
+		btnLogOut.setBounds(477, 437, 177, 23);
 		frame.getContentPane().add(btnLogOut);
 		
-		JButton btnE = new JButton("E\u03BA\u03C4\u03CD\u03C0\u03C9\u03C3\u03B7");
+		JButton btnE = new JButton("\u0391\u03C0\u03BF\u03B8\u03AE\u03BA\u03B5\u03C5\u03C3\u03B7-E\u03BA\u03C4\u03CD\u03C0\u03C9\u03C3\u03B7 ");
+		btnE.setToolTipText("\u03A0\u03B1\u03C4\u03CE\u03BD\u03C4\u03B1\u03C2 \u03B5\u03BA\u03C4\u03CD\u03C0\u03C9\u03C3\u03B7 \u03BA\u03B1\u03C4\u03B1\u03C7\u03C9\u03C1\u03BF\u03CD\u03BD\u03C4\u03B1\u03B9 \u03C3\u03C4\u03BF \u03C3\u03CD\u03C3\u03C4\u03B7\u03BC\u03B1 \u03C4\u03B1 \u03C3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1");
 		btnE.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PrinterJob pj = PrinterJob.getPrinterJob();
-				PageFormat pf = pj.pageDialog(pj.defaultPage());
-			}
-		});
-		btnE.setBounds(138, 422, 116, 23);
-		frame.getContentPane().add(btnE);
-		
-		JCheckBox receipt = new JCheckBox("\u0391\u03C0\u03CC\u03B4\u03B5\u03B9\u03BE\u03B7");
-		receipt.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				invoice.setSelected(false);
-				receipt.setSelected(true);
-			}
-		});
-		receipt.setBounds(490, 372, 84, 23);
-		frame.getContentPane().add(receipt);
-		receipt.setSelected(true);
-		
-		
-		
-		invoice.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				receipt.setSelected(false);
-				invoice.setSelected(true);
-				
-			}
-		});
-		invoice.setBounds(391, 372, 97, 23);
-		frame.getContentPane().add(invoice);
-		
-		NameField = new JTextField();
-		NameField.setBounds(85, 314, 113, 20);
-		frame.getContentPane().add(NameField);
-		NameField.setColumns(10);
-		
-		JLabel label_3 = new JLabel("\u03A3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1 \u03A0\u03B5\u03BB\u03AC\u03C4\u03B7");
-		label_3.setHorizontalAlignment(SwingConstants.CENTER);
-		label_3.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 13));
-		label_3.setBounds(21, 292, 177, 14);
-		frame.getContentPane().add(label_3);
-		
-		JLabel label_4 = new JLabel("\u038C\u03BD\u03BF\u03BC\u03B1:");
-		label_4.setBounds(21, 317, 56, 14);
-		frame.getContentPane().add(label_4);
-		
-		JLabel label_5 = new JLabel("\u0395\u03C0\u03AF\u03B8\u03B5\u03C4\u03BF:");
-		label_5.setBounds(21, 342, 46, 14);
-		frame.getContentPane().add(label_5);
-		
-		LastNameField = new JTextField();
-		LastNameField.setColumns(10);
-		LastNameField.setBounds(85, 339, 113, 20);
-		frame.getContentPane().add(LastNameField);
-		
-		JLabel label_6 = new JLabel("\u0391.\u03A4.:");
-		label_6.setBounds(21, 376, 46, 14);
-		frame.getContentPane().add(label_6);
-		
-		CertificateField = new JTextField();
-		CertificateField.setBounds(85, 373, 113, 20);
-		frame.getContentPane().add(CertificateField);
-		CertificateField.setColumns(10);
-		
-		ticketNO = new JTextField();
-		ticketNO.setFont(new Font("Charlemagne Std", Font.BOLD | Font.ITALIC, 16));
-		ticketNO.setHorizontalAlignment(SwingConstants.CENTER);
-		ticketNO.setEditable(false);
-		ticketNO.setBounds(437, 339, 116, 20);
-		frame.getContentPane().add(ticketNO);
-		ticketNO.setColumns(10);
-		
-		int lastNumber = last();
-		ticketNO.setText(String.valueOf(lastNumber+1));
-		
-		JLabel label_7 = new JLabel("\u0391\u03C1.\u0395\u03B9\u03C3.");
-		label_7.setBounds(383, 342, 46, 14);
-		
-		
-		frame.getContentPane().add(label_7);
-		JButton save = new JButton("\u0391\u03C0\u03BF\u03B8\u03AE\u03BA\u03B5\u03C5\u03C3\u03B7");
-		save.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				
+
 				String name = NameField.getText().trim().toLowerCase().toString();
 				String lastname = LastNameField.getText().trim().toLowerCase().toString();
 				String cert = CertificateField.getText().trim().toLowerCase().toString();
@@ -419,11 +319,85 @@ public class CashierScreen {
 				returnDateField.setText(null);
 				departureDateField.setText(null);
 				
-				
-			};
+				PrinterJob pj = PrinterJob.getPrinterJob();
+				PageFormat pf = pj.pageDialog(pj.defaultPage());
+			}
 		});
-		save.setBounds(21, 422, 117, 23);
-		frame.getContentPane().add(save);
+		btnE.setBounds(21, 437, 177, 23);
+		frame.getContentPane().add(btnE);
+		
+		
+		receipt.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				invoice.setSelected(false);
+				receipt.setSelected(true);
+			}
+		});
+		receipt.setBounds(584, 372, 84, 23);
+		frame.getContentPane().add(receipt);
+		receipt.setSelected(true);
+		
+		
+		
+		invoice.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				receipt.setSelected(false);
+				invoice.setSelected(true);
+				
+			}
+		});
+		invoice.setBounds(485, 372, 97, 23);
+		frame.getContentPane().add(invoice);
+		
+		NameField = new JTextField();
+		NameField.setBounds(85, 314, 113, 20);
+		frame.getContentPane().add(NameField);
+		NameField.setColumns(10);
+		
+		JLabel label_3 = new JLabel("\u03A3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1 \u03A0\u03B5\u03BB\u03AC\u03C4\u03B7");
+		label_3.setHorizontalAlignment(SwingConstants.CENTER);
+		label_3.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 13));
+		label_3.setBounds(21, 292, 177, 14);
+		frame.getContentPane().add(label_3);
+		
+		JLabel label_4 = new JLabel("\u038C\u03BD\u03BF\u03BC\u03B1:");
+		label_4.setBounds(21, 317, 56, 14);
+		frame.getContentPane().add(label_4);
+		
+		JLabel label_5 = new JLabel("\u0395\u03C0\u03AF\u03B8\u03B5\u03C4\u03BF:");
+		label_5.setBounds(21, 342, 46, 14);
+		frame.getContentPane().add(label_5);
+		
+		LastNameField = new JTextField();
+		LastNameField.setColumns(10);
+		LastNameField.setBounds(85, 339, 113, 20);
+		frame.getContentPane().add(LastNameField);
+		
+		JLabel label_6 = new JLabel("\u0391.\u03A4.:");
+		label_6.setBounds(21, 376, 46, 14);
+		frame.getContentPane().add(label_6);
+		
+		CertificateField = new JTextField();
+		CertificateField.setBounds(85, 373, 113, 20);
+		frame.getContentPane().add(CertificateField);
+		CertificateField.setColumns(10);
+		
+		ticketNO = new JTextField();
+		ticketNO.setFont(new Font("Charlemagne Std", Font.BOLD | Font.ITALIC, 16));
+		ticketNO.setHorizontalAlignment(SwingConstants.CENTER);
+		ticketNO.setEditable(false);
+		ticketNO.setBounds(531, 339, 116, 20);
+		frame.getContentPane().add(ticketNO);
+		ticketNO.setColumns(10);
+		
+		int lastNumber = last();
+		ticketNO.setText(String.valueOf(lastNumber+1));
+		
+		JLabel label_7 = new JLabel("\u0391\u03C1.\u0395\u03B9\u03C3.");
+		label_7.setBounds(477, 342, 46, 14);
+		
+		
+		frame.getContentPane().add(label_7);
 	}
 	int last(){
 		int lastNumber = MySql.getnextTicketNo();

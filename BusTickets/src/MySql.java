@@ -213,4 +213,40 @@ public class MySql
 			e.printStackTrace();
 		} 
 	}
+
+
+
+	public static boolean DeleteUser(Object id) {
+		boolean check = false;
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			Connection conn = null;
+			Statement stmt = null;
+			Statement stmt1 = null;
+			
+			conn = DriverManager.getConnection(connectionURL,usernamefordatabase,passwordfordatabase);
+			//create statements;
+			stmt = conn.createStatement();
+			stmt1 = conn.createStatement();
+			
+			//first delete the user and set boolean to true;
+			String sql = "DELETE FROM user WHERE ID="+id+"";
+			int count = stmt.executeUpdate(sql);
+			check = (count>0);
+			
+			//reset auto increment so in the next add we set it back to the original number;
+			String incrToZero = "ALTER TABLE user AUTO_INCREMENT = 1";
+			stmt1.executeUpdate(incrToZero);
+			
+				
+		}catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return check;
+	}
 }
