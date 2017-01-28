@@ -114,7 +114,7 @@ public class CashierScreen {
 		JButton btnNewButton = new JButton("\u0391\u03BD\u03B1\u03B6\u03AE\u03C4\u03B7\u03C3\u03B7 - \u0394\u03B9\u03B1\u03B3\u03C1\u03B1\u03C6\u03AE");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				CashierSearchAndDelete.AdminScreen();
+				
 				
 			}
 		});
