@@ -58,6 +58,8 @@ import javax.swing.JInternalFrame;
 import javax.swing.JDesktopPane;
 import javax.swing.JToolBar;
 import javax.swing.JLayeredPane;
+import javax.swing.JSeparator;
+import javax.swing.JComboBox;
 
 
 public class CashierScreen {
@@ -69,10 +71,10 @@ public class CashierScreen {
 	private JFrame frame;
 	private JTextField returnDateField;
 	private JTextField departureDateField;
-	private JTextField NameField;
 	private JTextField LastNameField;
 	private JTextField CertificateField;
 	private JTextField ticketNO;
+	private JTextField NameField;
 
 	/**
 	 * Launch the application.
@@ -115,11 +117,34 @@ public class CashierScreen {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
+				closewindow();
+				CashierSearchAndDelete.CashierSearchAndDelete();
 				
 			}
 		});
 		btnNewButton.setBounds(259, 437, 177, 23);
 		frame.getContentPane().add(btnNewButton);
+		
+		NameField = new JTextField();
+		NameField.setColumns(10);
+		NameField.setBounds(85, 317, 113, 20);
+		frame.getContentPane().add(NameField);
+		
+		JLabel label = new JLabel("\u038C\u03BD\u03BF\u03BC\u03B1:");
+		label.setBounds(21, 320, 56, 14);
+		frame.getContentPane().add(label);
+		
+		JLabel lblNewLabel = new JLabel("\u039B\u03B5\u03C9\u03C6\u03BF\u03C1\u03B5\u03B9\u03BF");
+		lblNewLabel.setBounds(208, 74, 65, 14);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(208, 99, 262, 2);
+		frame.getContentPane().add(separator);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(208, 111, 262, 20);
+		frame.getContentPane().add(comboBox);
 	}
 
 	/**
@@ -277,7 +302,24 @@ public class CashierScreen {
 				String name = NameField.getText().trim().toLowerCase().toString();
 				String lastname = LastNameField.getText().trim().toLowerCase().toString();
 				String cert = CertificateField.getText().trim().toLowerCase().toString();
-				
+				//check if all fields are filled
+				int countErrors=0;
+				if (NameField.getText().equals("")){
+					JOptionPane.showMessageDialog(frame, "You didn't filled a name.",name, JOptionPane.ERROR_MESSAGE, null);
+					countErrors++;
+				}
+				if (LastNameField.getText().equals("")){
+					JOptionPane.showMessageDialog(frame, "You didn't filled a LastName.",lastname, JOptionPane.ERROR_MESSAGE, null);
+					countErrors++;
+				}
+				if (CertificateField.getText().equals("")){
+					JOptionPane.showMessageDialog(frame, "You didn't filled an ID Number.",cert, JOptionPane.ERROR_MESSAGE, null);
+					countErrors++;
+				}
+				//if they aren't return
+				if (countErrors > 0){
+					return;
+				}
 				//get return date/departure date/ticketnumber && receiptValue to store them in db
 				int ticketnumber = Integer.parseInt(ticketNO.getText());
 				String retDate = returnDateField.getText().toString();
@@ -286,13 +328,21 @@ public class CashierScreen {
 				
 				//start trascoding string to sql.date morph to be ready to be inserted to db
 		        Date parsed = null;
-				try {
-					parsed = df.parse(retDate);
-				} catch (ParseException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-		        java.sql.Date returnDate = new java.sql.Date(parsed.getTime());
+		        java.sql.Date returnDate = null;
+		        if (returnDateField.getText().toString().equals("")){
+		        	JOptionPane.showMessageDialog(frame, "The ticket is stored without a return date",retDate, JOptionPane.WARNING_MESSAGE, null);
+		        }
+		        else
+		        {
+					try {
+						parsed = df.parse(retDate);
+					} catch (ParseException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					returnDate = new java.sql.Date(parsed.getTime());
+		        }
+		       
 		        
 
 				
@@ -303,12 +353,13 @@ public class CashierScreen {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-		        java.sql.Date departureDate = new java.sql.Date(parsed1.getTime());
+				java.sql.Date  departureDate = new java.sql.Date(parsed1.getTime());
 		   
+				 //save to db
 		        
-		        
-		        //save to db
-				MySql.saveTickets(name,lastname,cert,ticketnumber,returnDate,departureDate, receiptValue);
+		        	Tickets.saveTickets(name,lastname,cert,ticketnumber,returnDate,departureDate, receiptValue);
+		       
+				
 				
 				//reset all values to defaults so the cashier can select new ticket.
 				int lastNumber = last();
@@ -349,36 +400,27 @@ public class CashierScreen {
 		invoice.setBounds(485, 372, 97, 23);
 		frame.getContentPane().add(invoice);
 		
-		NameField = new JTextField();
-		NameField.setBounds(85, 314, 113, 20);
-		frame.getContentPane().add(NameField);
-		NameField.setColumns(10);
-		
 		JLabel label_3 = new JLabel("\u03A3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1 \u03A0\u03B5\u03BB\u03AC\u03C4\u03B7");
 		label_3.setHorizontalAlignment(SwingConstants.CENTER);
 		label_3.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 13));
 		label_3.setBounds(21, 292, 177, 14);
 		frame.getContentPane().add(label_3);
 		
-		JLabel label_4 = new JLabel("\u038C\u03BD\u03BF\u03BC\u03B1:");
-		label_4.setBounds(21, 317, 56, 14);
-		frame.getContentPane().add(label_4);
-		
 		JLabel label_5 = new JLabel("\u0395\u03C0\u03AF\u03B8\u03B5\u03C4\u03BF:");
-		label_5.setBounds(21, 342, 46, 14);
+		label_5.setBounds(21, 348, 46, 14);
 		frame.getContentPane().add(label_5);
 		
 		LastNameField = new JTextField();
 		LastNameField.setColumns(10);
-		LastNameField.setBounds(85, 339, 113, 20);
+		LastNameField.setBounds(85, 345, 113, 20);
 		frame.getContentPane().add(LastNameField);
 		
 		JLabel label_6 = new JLabel("\u0391.\u03A4.:");
-		label_6.setBounds(21, 376, 46, 14);
+		label_6.setBounds(21, 382, 46, 14);
 		frame.getContentPane().add(label_6);
 		
 		CertificateField = new JTextField();
-		CertificateField.setBounds(85, 373, 113, 20);
+		CertificateField.setBounds(85, 379, 113, 20);
 		frame.getContentPane().add(CertificateField);
 		CertificateField.setColumns(10);
 		
@@ -400,8 +442,11 @@ public class CashierScreen {
 		frame.getContentPane().add(label_7);
 	}
 	int last(){
-		int lastNumber = MySql.getnextTicketNo();
+		int lastNumber = Tickets.getnextTicketNo();
 		return lastNumber;
+	}
+	public void closewindow(){
+		frame.setVisible(false);
 	}
 }
 

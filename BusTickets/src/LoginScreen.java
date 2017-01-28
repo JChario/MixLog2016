@@ -84,8 +84,8 @@ public class LoginScreen extends JFrame {
 				String thisPassword = new String(passwordField.getPassword());
 				thisPassword.trim().toLowerCase();
 				
-					MySql.VerifyLogin(thisUser, thisPassword);
-					if (MySql.LoggedIN()){
+					Users.VerifyLogin(thisUser, thisPassword);
+					if (Users.LoggedIN()){
 						closewindow();
 					}
 					
@@ -112,7 +112,7 @@ public class LoginScreen extends JFrame {
 		usernameField.setColumns(10);
 		
 		JPanel panel = new JPanel();
-		panel.setToolTipText("\u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2 \u0399\u03C9\u03AC\u03BD\u03BD\u03B7\u03C2:42625+++\r\n\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2:41803+++\r\n\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03CE\u03BD/\u03BD\u03BF\u03C2:41795");
+		panel.setToolTipText("\u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2 \u0399\u03C9\u03AC\u03BD\u03BD\u03B7\u03C2:42625///\r\n\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2:41803///\r\n\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03CE\u03BD/\u03BD\u03BF\u03C2:41795");
 		panel.setBorder(new BevelBorder(BevelBorder.RAISED, Color.GRAY, Color.BLACK, Color.GRAY, Color.BLACK));
 		panel.setBounds(42, 23, 596, 225);
 		contentPane.add(panel);
@@ -133,7 +133,7 @@ public class LoginScreen extends JFrame {
 		textArea.setBackground(new Color(0,0,0,0));
 		textArea.setEditable(false);
 		textArea.setFont(new Font("Microsoft YaHei Light", Font.PLAIN, 55));
-		textArea.setToolTipText("\u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2 \u0399\u03C9\u03AC\u03BD\u03BD\u03B7\u03C2:42625\r\n\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2:41803\r\n\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03CE\u03BD/\u03BD\u03BF\u03C2: 41795");
+		textArea.setToolTipText("\u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2 \u0399\u03C9\u03AC\u03BD\u03BD\u03B7\u03C2:42625///\r\n\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2:41803///\r\n\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03CE\u03BD/\u03BD\u03BF\u03C2:41795");
 		textArea.setWrapStyleWord(true);
 		textArea.setLineWrap(true);
 		textArea.setText("\u039C\u03B7\u03C7\u03B1\u03BD\u03B9\u03BA\u03AE \u039B\u03BF\u03B3\u03B9\u03C3\u03BC\u03B9\u03BA\u03BF\u03CD");
