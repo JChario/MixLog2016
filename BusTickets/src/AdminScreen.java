@@ -46,7 +46,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.JSeparator;
 public class AdminScreen {
 
-	private JFrame frame;
+	private JFrame frmEztravel;
 	private JTextField UserUsername;
 	private JTextField UserPassword;
 	private JTextField AdminUsername;
@@ -69,7 +69,7 @@ public class AdminScreen {
 			public void run() {
 				try {
 					AdminScreen window = new AdminScreen();
-					window.frame.setVisible(true);
+					window.frmEztravel.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -101,14 +101,15 @@ public class AdminScreen {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 687, 541);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frmEztravel = new JFrame();
+		frmEztravel.setTitle("EZTravel");
+		frmEztravel.setBounds(100, 100, 687, 541);
+		frmEztravel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmEztravel.getContentPane().setLayout(null);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(10, 11, 654, 447);
-		frame.getContentPane().add(tabbedPane);
+		frmEztravel.getContentPane().add(tabbedPane);
 		
 		JPanel Users12 = new JPanel();
 		tabbedPane.addTab("Users", null, Users12, null);
@@ -246,11 +247,11 @@ public class AdminScreen {
 					if (Busses.DeleteBus(selectedID)){
 						int modelRow = busTable.convertRowIndexToModel( row );
 						BusModel.removeRow( modelRow );
-						JOptionPane.showMessageDialog(frame, "~Bus~\nΑριθμός Λεωφορείου: " + selectedID + "\nHas been removed successfully!!", "Success!!", JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(frmEztravel, "~Bus~\nΑριθμός Λεωφορείου: " + selectedID + "\nHas been removed successfully!!", "Success!!", JOptionPane.INFORMATION_MESSAGE);
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(frame, "Couldn't delete the bus with id: "+selectedID+".\nSomething went wrong.\nContact info@bustickets.gr","Error..", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(frmEztravel, "Couldn't delete the bus with id: "+selectedID+".\nSomething went wrong.\nContact info@bustickets.gr","Error..", JOptionPane.ERROR_MESSAGE);
 					}
 					
 				}
@@ -305,15 +306,15 @@ public class AdminScreen {
 				String thisDestination = destinationBusField.getText().toString().trim().toLowerCase();
 				System.out.println(thisDestination);
 				if (thisbusNumber.equals("")){
-					JOptionPane.showMessageDialog(frame, "Please insert a bus Number first",thisbusNumber, JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(frmEztravel, "Please insert a bus Number first!",thisbusNumber, JOptionPane.ERROR_MESSAGE);
 					errorCount++;
 				}
 				if (thisbusSeats.equals("")){
-					JOptionPane.showMessageDialog(frame, "Something Went Wrong\nPlease try again!",thisbusSeats, JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(frmEztravel, "Please insert a seat!\nPlease try again!",thisbusSeats, JOptionPane.ERROR_MESSAGE);
 					errorCount++;
 				}
 				if (thisDestination.equals("")){
-					JOptionPane.showMessageDialog(frame, "Something Went Wrong\nPlease try again!",thisDestination, JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(frmEztravel, "Please insert a destination!\nPlease try again!",thisDestination, JOptionPane.ERROR_MESSAGE);
 					errorCount++;
 				}
 				
@@ -322,16 +323,16 @@ public class AdminScreen {
 				}
 				else
 				{
-					Busses.UpdateDB(frame,thisbusNumber, thisbusSeats, thisDestination);
+					Busses.UpdateDB(frmEztravel,thisbusNumber, thisbusSeats, thisDestination);
 					if (Busses.success()){
 						busNumberField.setText("");
 						busSeatsField.setText("");
 						destinationBusField.setText("");
-						JOptionPane.showMessageDialog(frame, "Bus: .: "+thisbusNumber+" :. was added successfully !!");
+						JOptionPane.showMessageDialog(frmEztravel, "Bus: .: "+thisbusNumber+" :. was added successfully !!");
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(frame, "Something Went Wrong\nPlease try again!","Error..", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(frmEztravel, "Something Went Wrong\nPlease try again!","Error..", JOptionPane.ERROR_MESSAGE);
 					}
 					
 					refreshTable("Bus");
@@ -345,15 +346,15 @@ public class AdminScreen {
 		
 		JLabel lblWelcomeAdmin = new JLabel("Welcome Admin");
 		lblWelcomeAdmin.setBounds(10, 0, 637, 22);
-		frame.getContentPane().add(lblWelcomeAdmin);
+		frmEztravel.getContentPane().add(lblWelcomeAdmin);
 		lblWelcomeAdmin.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		JButton btnLogOut = new JButton("Log Out");
 		btnLogOut.setBounds(570, 469, 91, 23);
-		frame.getContentPane().add(btnLogOut);
+		frmEztravel.getContentPane().add(btnLogOut);
 		btnLogOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				frame.setVisible(false);
+				frmEztravel.setVisible(false);
 				LoginScreen login = new LoginScreen();
 				login.setVisible(true);
 			}
@@ -372,11 +373,11 @@ public class AdminScreen {
 					if (Users.DeleteUser(selectedID)){
 						int modelRow = table.convertRowIndexToModel( row );
 						model.removeRow( modelRow );
-						JOptionPane.showMessageDialog(frame, "~USER~\nId: " + selectedID + "\nUsername:"+selectedName+"\nHas been removed successfully!!", "Success!!", JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(frmEztravel, "~USER~\nId: " + selectedID + "\nUsername:"+selectedName+"\nHas been removed successfully!!", "Success!!", JOptionPane.INFORMATION_MESSAGE);
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(frame, "Couldn't delete the user with username: "+selectedName+".\nSomething went wrong.\nContact info@bustickets.gr","Error..", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(frmEztravel, "Couldn't delete the user with username: "+selectedName+".\nSomething went wrong.\nContact info@bustickets.gr","Error..", JOptionPane.ERROR_MESSAGE);
 					}
 					
 				}
@@ -391,11 +392,11 @@ public class AdminScreen {
 				if (Users.success()){
 					AdminUsername.setText("");
 					AdminPassword.setText("");
-					JOptionPane.showMessageDialog(frame, "Admin: .: "+thisUsername+" :. was added successfully !!");
+					JOptionPane.showMessageDialog(frmEztravel, "Admin: .: "+thisUsername+" :. was added successfully !!");
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(frame, "Something Went Wrong\nPlease try again!");
+					JOptionPane.showMessageDialog(frmEztravel, "Something Went Wrong\nPlease try again!");
 				}
 				
 				refreshTable("User");
@@ -409,11 +410,11 @@ public class AdminScreen {
 				if (Users.success()){
 					UserUsername.setText("");
 					UserPassword.setText("");
-					JOptionPane.showMessageDialog(frame, "Cashier: .: "+thisUsername+" :. was added successfully !!");
+					JOptionPane.showMessageDialog(frmEztravel, "Cashier: .: "+thisUsername+" :. was added successfully !!");
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(frame, "Something Went Wrong\nPlease try again!");
+					JOptionPane.showMessageDialog(frmEztravel, "Something Went Wrong\nPlease try again!");
 				}
 				
 				refreshTable("User");

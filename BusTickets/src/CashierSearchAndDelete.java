@@ -45,7 +45,7 @@ import javax.swing.JTextArea;
 import java.awt.Font;
 public class CashierSearchAndDelete {
 
-	private JFrame frame;
+	private JFrame frmEztravel;
 	private JTextField TicketNumber;
 	private JTable table;
 	public DefaultTableModel model = new DefaultTableModel(new String[]{"ID","CustomerName", "CustomerLastName", "IDNumber","Departure Date", "Return Date","Bus Number","Seat Number", "Receipt Type"}, 0);
@@ -58,7 +58,7 @@ public class CashierSearchAndDelete {
 			public void run() {
 				try {
 					CashierSearchAndDelete window = new CashierSearchAndDelete();
-					window.frame.setVisible(true);
+					window.frmEztravel.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -77,41 +77,42 @@ public class CashierSearchAndDelete {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 690, 510);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frmEztravel = new JFrame();
+		frmEztravel.setTitle("EZTravel");
+		frmEztravel.setBounds(100, 100, 690, 510);
+		frmEztravel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmEztravel.getContentPane().setLayout(null);
 		
 		JLabel lblWelcomeAdmin = new JLabel("\u03A0\u03BB\u03B7\u03BA\u03C4\u03C1\u03BF\u03BB\u03BF\u03B3\u03B5\u03AF\u03C3\u03C4\u03B5 \u03C4\u03BF\u03BD \"\u0391\u03C1\u03B9\u03B8\u03BC\u03CC \u0395\u03B9\u03C3\u03B9\u03C4\u03B7\u03C1\u03AF\u03BF\u03C5\" \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03B4\u03B5\u03AF\u03C4\u03B5 \u03C4\u03BF \u03B5\u03B9\u03C3\u03B9\u03C4\u03AE\u03C1\u03B9\u03BF");
 		lblWelcomeAdmin.setHorizontalAlignment(SwingConstants.CENTER);
 		lblWelcomeAdmin.setBounds(10, 11, 637, 22);
-		frame.getContentPane().add(lblWelcomeAdmin);
+		frmEztravel.getContentPane().add(lblWelcomeAdmin);
 		
 		JLabel AddaCashier = new JLabel("\u0391\u03C1\u03B9\u03B8\u03BC\u03BF\u03C2 \u0395\u03B9\u03C3\u03B9\u03C4\u03B7\u03C1\u03B9\u03BF\u03C5");
 		AddaCashier.setBounds(10, 92, 138, 14);
-		frame.getContentPane().add(AddaCashier);
+		frmEztravel.getContentPane().add(AddaCashier);
 		
 		TicketNumber = new JTextField();
 		TicketNumber.setHorizontalAlignment(SwingConstants.CENTER);
 		TicketNumber.setBounds(10, 119, 138, 20);
-		frame.getContentPane().add(TicketNumber);
+		frmEztravel.getContentPane().add(TicketNumber);
 		TicketNumber.setBorder(new LineBorder(Color.CYAN, 2, true));
 		TicketNumber.setColumns(10);
 		
 		JButton btnLogOut = new JButton("Back");
 		btnLogOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				frame.setVisible(false);
+				frmEztravel.setVisible(false);
 				CashierScreen.CashierScreen();
 			}
 		});
 		btnLogOut.setBounds(575, 435, 89, 23);
-		frame.getContentPane().add(btnLogOut);
+		frmEztravel.getContentPane().add(btnLogOut);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
 		scrollPane.setBounds(10, 184, 654, 102);
-		frame.getContentPane().add(scrollPane);
+		frmEztravel.getContentPane().add(scrollPane);
 		
 		//create table with model in mind :D 
 		table = new JTable(model);
@@ -138,11 +139,11 @@ public class CashierSearchAndDelete {
 					if (Tickets.DeleteTicket(selectedID)){
 						int modelRow = table.convertRowIndexToModel( row );
 						model.removeRow( modelRow );
-						JOptionPane.showMessageDialog(frame, "~Ticket~\nId: " + selectedID + "\nTicketNumber:"+selectedID+"\nHas been removed successfully!!", "Success!!", JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(frmEztravel, "~Ticket~\nId: " + selectedID + "\nTicketNumber:"+selectedID+"\nHas been removed successfully!!", "Success!!", JOptionPane.INFORMATION_MESSAGE);
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(frame, "Couldn't delete the ticket with id: "+selectedID+".\nSomething went wrong.\nContact info@bustickets.gr","Error..", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(frmEztravel, "Couldn't delete the ticket with id: "+selectedID+".\nSomething went wrong.\nContact info@bustickets.gr","Error..", JOptionPane.ERROR_MESSAGE);
 					}
 					refreshTable();
 					
@@ -151,7 +152,7 @@ public class CashierSearchAndDelete {
 			}
 		});
 		btnDelete.setBounds(10, 316, 89, 23);
-		frame.getContentPane().add(btnDelete);
+		frmEztravel.getContentPane().add(btnDelete);
 		
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
@@ -162,17 +163,17 @@ public class CashierSearchAndDelete {
 				if (isINT){
 					//parse them to int
 					int id = Integer.parseInt(number);
-					Tickets.PrintTableTickets(frame,model, id);
+					Tickets.PrintTableTickets(frmEztravel,model, id);
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(frame, "You didn't give a number!","Please insert a number", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(frmEztravel, "You didn't give a number!","Please insert a number", JOptionPane.ERROR_MESSAGE);
 					return;
 				}
 			}
 		});
 		btnSearch.setBounds(10, 150, 89, 23);
-		frame.getContentPane().add(btnSearch);
+		frmEztravel.getContentPane().add(btnSearch);
 		//JScrollPane scrollPane = new JScrollPane(table);
 		
 	}

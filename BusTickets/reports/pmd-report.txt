@@ -1,0 +1,1337 @@
+src/AdminScreen.java:2:	A high number of imports can indicate a high degree of coupling within an object.
+src/AdminScreen.java:7:	Avoid unused imports such as 'java.awt.Component'
+src/AdminScreen.java:8:	Avoid unused imports such as 'javax.swing.Box'
+src/AdminScreen.java:9:	Avoid unused imports such as 'java.awt.Label'
+src/AdminScreen.java:11:	Avoid unused imports such as 'java.sql.SQLException'
+src/AdminScreen.java:14:	Avoid unused imports such as 'javax.swing.ListModel'
+src/AdminScreen.java:16:	Avoid unused imports such as 'java.awt.Panel'
+src/AdminScreen.java:17:	Avoid unused imports such as 'java.awt.ScrollPane'
+src/AdminScreen.java:18:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/AdminScreen.java:19:	Avoid unused imports such as 'javax.swing.JList'
+src/AdminScreen.java:22:	Avoid unused imports such as 'javax.swing.border.BevelBorder'
+src/AdminScreen.java:24:	Avoid unused imports such as 'javax.swing.AbstractListModel'
+src/AdminScreen.java:25:	Avoid unused imports such as 'java.awt.List'
+src/AdminScreen.java:26:	Avoid unused imports such as 'java.awt.Choice'
+src/AdminScreen.java:27:	Avoid unused imports such as 'java.awt.TextField'
+src/AdminScreen.java:28:	Avoid unused imports such as 'javax.swing.JTextPane'
+src/AdminScreen.java:32:	Avoid unused imports such as 'javax.swing.table.TableColumnModel'
+src/AdminScreen.java:33:	Avoid unused imports such as 'javax.swing.table.TableModel'
+src/AdminScreen.java:35:	Avoid unused imports such as 'java.awt.SystemColor'
+src/AdminScreen.java:36:	Avoid unused imports such as 'javax.swing.DropMode'
+src/AdminScreen.java:37:	Avoid unused imports such as 'javax.swing.ScrollPaneConstants'
+src/AdminScreen.java:38:	Avoid unused imports such as 'javax.swing.border.CompoundBorder'
+src/AdminScreen.java:41:	Avoid unused imports such as 'javax.swing.JTextArea'
+src/AdminScreen.java:42:	Avoid unused imports such as 'java.awt.Font'
+src/AdminScreen.java:44:	Avoid unused imports such as 'javax.swing.JRootPane'
+src/AdminScreen.java:47:	All classes and interfaces must belong to a named package
+src/AdminScreen.java:47:	The class 'AdminScreen' has a Cyclomatic Complexity of 5 (Highest = 18).
+src/AdminScreen.java:47:	The class 'AdminScreen' has a Modified Cyclomatic Complexity of 5 (Highest = 18).
+src/AdminScreen.java:47:	The class 'AdminScreen' has a Standard Cyclomatic Complexity of 5 (Highest = 18).
+src/AdminScreen.java:47:	headerCommentRequirement Required
+src/AdminScreen.java:49:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:49:	fieldCommentRequirement Required
+src/AdminScreen.java:50:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:50:	Variables should start with a lowercase character, 'UserUsername' starts with uppercase character.
+src/AdminScreen.java:50:	fieldCommentRequirement Required
+src/AdminScreen.java:51:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:51:	Variables should start with a lowercase character, 'UserPassword' starts with uppercase character.
+src/AdminScreen.java:51:	fieldCommentRequirement Required
+src/AdminScreen.java:52:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:52:	Variables should start with a lowercase character, 'AdminUsername' starts with uppercase character.
+src/AdminScreen.java:52:	fieldCommentRequirement Required
+src/AdminScreen.java:53:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:53:	Variables should start with a lowercase character, 'AdminPassword' starts with uppercase character.
+src/AdminScreen.java:53:	fieldCommentRequirement Required
+src/AdminScreen.java:54:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:54:	fieldCommentRequirement Required
+src/AdminScreen.java:55:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:55:	fieldCommentRequirement Required
+src/AdminScreen.java:56:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:56:	Variables should start with a lowercase character, 'BusModel' starts with uppercase character.
+src/AdminScreen.java:56:	fieldCommentRequirement Required
+src/AdminScreen.java:57:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:57:	fieldCommentRequirement Required
+src/AdminScreen.java:58:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:58:	fieldCommentRequirement Required
+src/AdminScreen.java:59:	Avoid excessively long variable names like destinationBusField
+src/AdminScreen.java:59:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:59:	fieldCommentRequirement Required
+src/AdminScreen.java:60:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/AdminScreen.java:60:	fieldCommentRequirement Required
+src/AdminScreen.java:67:	Classes should not have non-constructor methods with the same name as the class
+src/AdminScreen.java:67:	Method names should not start with capital letters
+src/AdminScreen.java:68:	To be compliant to J2EE, a webapp should not use any thread.
+src/AdminScreen.java:69:	publicMethodCommentRequirement Required
+src/AdminScreen.java:71:	Local variable 'window' could be declared final
+src/AdminScreen.java:72:	Potential violation of Law of Demeter (static property access)
+src/AdminScreen.java:73:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/AdminScreen.java:74:	Avoid printStackTrace(); use a logger call instead.
+src/AdminScreen.java:87:	Parameter 'tableValue' is not assigned and could be declared final
+src/AdminScreen.java:87:	publicMethodCommentRequirement Required
+src/AdminScreen.java:90:	Avoid using Literals in Conditional Statements
+src/AdminScreen.java:90:	Use equals() to compare strings instead of '==' or '!='
+src/AdminScreen.java:103:	Avoid really long methods.
+src/AdminScreen.java:103:	The method 'initialize' has a Cyclomatic Complexity of 18.
+src/AdminScreen.java:103:	The method 'initialize' has a Modified Cyclomatic Complexity of 18.
+src/AdminScreen.java:103:	The method 'initialize' has a Standard Cyclomatic Complexity of 18.
+src/AdminScreen.java:103:	The method initialize() has an NCSS line count of 153
+src/AdminScreen.java:103:	The method initialize() has an NPath complexity of 864
+src/AdminScreen.java:108:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:110:	Local variable 'tabbedPane' could be declared final
+src/AdminScreen.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:112:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:114:	Local variable 'Users12' could be declared final
+src/AdminScreen.java:114:	Variables should start with a lowercase character, 'Users12' starts with uppercase character.
+src/AdminScreen.java:115:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:118:	Local variable 'AddUsr' could be declared final
+src/AdminScreen.java:118:	Variables should start with a lowercase character, 'AddUsr' starts with uppercase character.
+src/AdminScreen.java:119:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:122:	Local variable 'AddaCashier' could be declared final
+src/AdminScreen.java:122:	Variables should start with a lowercase character, 'AddaCashier' starts with uppercase character.
+src/AdminScreen.java:123:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:124:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:125:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:133:	Local variable 'lblUsername' could be declared final
+src/AdminScreen.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:137:	Local variable 'lblPassword' could be declared final
+src/AdminScreen.java:138:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:147:	Local variable 'AddAdmin' could be declared final
+src/AdminScreen.java:147:	Variables should start with a lowercase character, 'AddAdmin' starts with uppercase character.
+src/AdminScreen.java:148:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:149:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:151:	Local variable 'lblAddAnAdmin' could be declared final
+src/AdminScreen.java:152:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:154:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:158:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:162:	Local variable 'label_1' could be declared final
+src/AdminScreen.java:162:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_1' is not final.
+src/AdminScreen.java:163:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:166:	Local variable 'label_2' could be declared final
+src/AdminScreen.java:166:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_2' is not final.
+src/AdminScreen.java:167:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:168:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:172:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:176:	Local variable 'lblExistingUsers' could be declared final
+src/AdminScreen.java:177:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:178:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:180:	Local variable 'scrollPane' could be declared final
+src/AdminScreen.java:181:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:182:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:195:	Local variable 'btnDelete' could be declared final
+src/AdminScreen.java:196:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:197:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:200:	Local variable 'separator_1' could be declared final
+src/AdminScreen.java:200:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'separator_1' is not final.
+src/AdminScreen.java:201:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:202:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:204:	Local variable 'separator_2' could be declared final
+src/AdminScreen.java:204:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'separator_2' is not final.
+src/AdminScreen.java:205:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:206:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:208:	Local variable 'separator_3' could be declared final
+src/AdminScreen.java:208:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'separator_3' is not final.
+src/AdminScreen.java:209:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:210:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:213:	Local variable 'BussesPanel' could be declared final
+src/AdminScreen.java:213:	Variables should start with a lowercase character, 'BussesPanel' starts with uppercase character.
+src/AdminScreen.java:214:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:215:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:217:	Local variable 'busScrollPane' could be declared final
+src/AdminScreen.java:218:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:219:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:223:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:231:	Local variable 'label_9' could be declared final
+src/AdminScreen.java:231:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_9' is not final.
+src/AdminScreen.java:232:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:233:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:237:	Local variable 'BusDelete' could be declared final
+src/AdminScreen.java:237:	Variables should start with a lowercase character, 'BusDelete' starts with uppercase character.
+src/AdminScreen.java:239:	Parameter 'arg0' is not assigned and could be declared final
+src/AdminScreen.java:239:	publicMethodCommentRequirement Required
+src/AdminScreen.java:241:	Local variable 'row' could be declared final
+src/AdminScreen.java:245:	Local variable 'selectedID' could be declared final
+src/AdminScreen.java:248:	Local variable 'modelRow' could be declared final
+src/AdminScreen.java:260:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:261:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:262:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:264:	Local variable 'label_3' could be declared final
+src/AdminScreen.java:264:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_3' is not final.
+src/AdminScreen.java:265:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:266:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:268:	Local variable 'separator' could be declared final
+src/AdminScreen.java:269:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:270:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:274:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:277:	Local variable 'label_4' could be declared final
+src/AdminScreen.java:277:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_4' is not final.
+src/AdminScreen.java:278:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:279:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:284:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:286:	Local variable 'label_5' could be declared final
+src/AdminScreen.java:286:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_5' is not final.
+src/AdminScreen.java:287:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:288:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:293:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:295:	Local variable 'label_6' could be declared final
+src/AdminScreen.java:295:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_6' is not final.
+src/AdminScreen.java:296:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:297:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:299:	Local variable 'button' could be declared final
+src/AdminScreen.java:301:	Parameter 'arg0' is not assigned and could be declared final
+src/AdminScreen.java:301:	publicMethodCommentRequirement Required
+src/AdminScreen.java:304:	Local variable 'thisbusNumber' could be declared final
+src/AdminScreen.java:304:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:304:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:304:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:304:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/AdminScreen.java:305:	Local variable 'thisbusSeats' could be declared final
+src/AdminScreen.java:305:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:305:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:305:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:305:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/AdminScreen.java:306:	Local variable 'thisDestination' could be declared final
+src/AdminScreen.java:306:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:306:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:306:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:306:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/AdminScreen.java:307:	System.out.println is used
+src/AdminScreen.java:308:	Position literals first in String comparisons
+src/AdminScreen.java:308:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:312:	Position literals first in String comparisons
+src/AdminScreen.java:312:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:316:	Position literals first in String comparisons
+src/AdminScreen.java:316:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:342:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:343:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:347:	Local variable 'lblWelcomeAdmin' could be declared final
+src/AdminScreen.java:348:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:349:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:350:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:352:	Local variable 'btnLogOut' could be declared final
+src/AdminScreen.java:353:	Potential violation of Law of Demeter (object not created locally)
+src/AdminScreen.java:354:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:356:	Parameter 'arg0' is not assigned and could be declared final
+src/AdminScreen.java:356:	publicMethodCommentRequirement Required
+src/AdminScreen.java:358:	Local variable 'login' could be declared final
+src/AdminScreen.java:364:	Parameter 'arg0' is not assigned and could be declared final
+src/AdminScreen.java:364:	publicMethodCommentRequirement Required
+src/AdminScreen.java:366:	Local variable 'row' could be declared final
+src/AdminScreen.java:370:	Local variable 'selectedID' could be declared final
+src/AdminScreen.java:371:	Local variable 'selectedName' could be declared final
+src/AdminScreen.java:374:	Local variable 'modelRow' could be declared final
+src/AdminScreen.java:388:	Parameter 'arg0' is not assigned and could be declared final
+src/AdminScreen.java:388:	publicMethodCommentRequirement Required
+src/AdminScreen.java:389:	Local variable 'thisUsername' could be declared final
+src/AdminScreen.java:389:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:389:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:389:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:389:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/AdminScreen.java:390:	Local variable 'thisPassword' could be declared final
+src/AdminScreen.java:390:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:390:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:390:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:390:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/AdminScreen.java:406:	Parameter 'arg0' is not assigned and could be declared final
+src/AdminScreen.java:406:	publicMethodCommentRequirement Required
+src/AdminScreen.java:407:	Local variable 'thisUsername' could be declared final
+src/AdminScreen.java:407:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:407:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:407:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:407:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/AdminScreen.java:408:	Local variable 'thisPassword' could be declared final
+src/AdminScreen.java:408:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:408:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:408:	Potential violation of Law of Demeter (method chain calls)
+src/AdminScreen.java:408:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/AdminScreen.java:432:	Method names should not start with capital letters
+src/AdminScreen.java:432:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'col_index' is not final.
+src/AdminScreen.java:432:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'row_index' is not final.
+src/AdminScreen.java:432:	Parameter 'col_index' is not assigned and could be declared final
+src/AdminScreen.java:432:	Parameter 'row_index' is not assigned and could be declared final
+src/AdminScreen.java:432:	publicMethodCommentRequirement Required
+src/AdminScreen.java:434:	Potential violation of Law of Demeter (method chain calls)
+src/Busses.java:6:	Avoid unused imports such as 'javax.annotation.processing.Messager'
+src/Busses.java:7:	Avoid unused imports such as 'javax.swing.JPanel'
+src/Busses.java:8:	Avoid unused imports such as 'javax.swing.JTable'
+src/Busses.java:14:	Avoid unused imports such as 'java.text.DateFormat'
+src/Busses.java:15:	Avoid unused imports such as 'java.text.ParseException'
+src/Busses.java:16:	Avoid unused imports such as 'java.text.SimpleDateFormat'
+src/Busses.java:17:	Avoid unused imports such as 'java.time.LocalDate'
+src/Busses.java:18:	Avoid unused imports such as 'java.util.Date'
+src/Busses.java:20:	All classes and interfaces must belong to a named package
+src/Busses.java:20:	headerCommentRequirement Required
+src/Busses.java:21:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/Busses.java:23:	fieldCommentRequirement Required
+src/Busses.java:24:	fieldCommentRequirement Required
+src/Busses.java:26:	To avoid mistakes add a comment at the beginning of the JDBC_DRIVER field if you want a default access modifier
+src/Busses.java:26:	Use explicit scoping instead of the default package private level
+src/Busses.java:26:	fieldCommentRequirement Required
+src/Busses.java:27:	To avoid mistakes add a comment at the beginning of the connectionURL field if you want a default access modifier
+src/Busses.java:27:	Use explicit scoping instead of the default package private level
+src/Busses.java:27:	Variables that are final and static should be all capitals, 'connectionURL' is not all capitals.
+src/Busses.java:27:	fieldCommentRequirement Required
+src/Busses.java:30:	Avoid excessively long variable names like usernamefordatabase
+src/Busses.java:30:	To avoid mistakes add a comment at the beginning of the usernamefordatabase field if you want a default access modifier
+src/Busses.java:30:	Use explicit scoping instead of the default package private level
+src/Busses.java:30:	Variables that are final and static should be all capitals, 'usernamefordatabase' is not all capitals.
+src/Busses.java:30:	fieldCommentRequirement Required
+src/Busses.java:31:	Avoid excessively long variable names like passwordfordatabase
+src/Busses.java:31:	To avoid mistakes add a comment at the beginning of the passwordfordatabase field if you want a default access modifier
+src/Busses.java:31:	Use explicit scoping instead of the default package private level
+src/Busses.java:31:	Variables that are final and static should be all capitals, 'passwordfordatabase' is not all capitals.
+src/Busses.java:31:	fieldCommentRequirement Required
+src/Busses.java:36:	Method names should not start with capital letters
+src/Busses.java:36:	Parameter 'model' is not assigned and could be declared final
+src/Busses.java:36:	publicMethodCommentRequirement Required
+src/Busses.java:38:	Ensure that resources like this Connection object are closed after use
+src/Busses.java:38:	Found 'DD'-anomaly for variable 'conn' (lines '38'-'41').
+src/Busses.java:39:	Ensure that resources like this Statement object are closed after use
+src/Busses.java:39:	Found 'DD'-anomaly for variable 'stmt' (lines '39'-'42').
+src/Busses.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:43:	Avoid variables with short names like rs
+src/Busses.java:43:	Ensure that resources like this ResultSet object are closed after use
+src/Busses.java:43:	Local variable 'rs' could be declared final
+src/Busses.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:44:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:46:	Avoid variables with short names like id
+src/Busses.java:46:	Local variable 'id' could be declared final
+src/Busses.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:47:	Avoid variables with short names like d
+src/Busses.java:47:	Local variable 'd' could be declared final
+src/Busses.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:48:	Avoid variables with short names like e
+src/Busses.java:48:	Local variable 'e' could be declared final
+src/Busses.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:49:	Avoid instantiating new objects inside loops
+src/Busses.java:55:	Avoid printStackTrace(); use a logger call instead.
+src/Busses.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:63:	Method names should not start with capital letters
+src/Busses.java:63:	Parameter 'selectedID' is not assigned and could be declared final
+src/Busses.java:63:	publicMethodCommentRequirement Required
+src/Busses.java:64:	Found 'DD'-anomaly for variable 'check' (lines '64'-'80').
+src/Busses.java:68:	Ensure that resources like this Connection object are closed after use
+src/Busses.java:68:	Found 'DD'-anomaly for variable 'conn' (lines '68'-'72').
+src/Busses.java:69:	Ensure that resources like this Statement object are closed after use
+src/Busses.java:69:	Found 'DD'-anomaly for variable 'stmt' (lines '69'-'74').
+src/Busses.java:70:	Ensure that resources like this Statement object are closed after use
+src/Busses.java:70:	Found 'DD'-anomaly for variable 'stmt1' (lines '70'-'75').
+src/Busses.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:78:	Do not add empty strings
+src/Busses.java:78:	Local variable 'sql' could be declared final
+src/Busses.java:79:	Local variable 'count' could be declared final
+src/Busses.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:80:	Useless parentheses.
+src/Busses.java:83:	Local variable 'incrToZero' could be declared final
+src/Busses.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:89:	Avoid printStackTrace(); use a logger call instead.
+src/Busses.java:89:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:92:	Avoid printStackTrace(); use a logger call instead.
+src/Busses.java:92:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:99:	Method names should not start with capital letters
+src/Busses.java:99:	Parameter 'frame' is not assigned and could be declared final
+src/Busses.java:99:	Parameter 'thisDestination' is not assigned and could be declared final
+src/Busses.java:99:	Parameter 'thisbusNumber' is not assigned and could be declared final
+src/Busses.java:99:	Parameter 'thisbusSeats' is not assigned and could be declared final
+src/Busses.java:99:	publicMethodCommentRequirement Required
+src/Busses.java:104:	Ensure that resources like this Connection object are closed after use
+src/Busses.java:104:	Found 'DD'-anomaly for variable 'conn' (lines '104'-'107').
+src/Busses.java:105:	Ensure that resources like this Statement object are closed after use
+src/Busses.java:105:	Found 'DD'-anomaly for variable 'stmt' (lines '105'-'108').
+src/Busses.java:106:	System.out.println is used
+src/Busses.java:108:	Found 'DU'-anomaly for variable 'stmt' (lines '108'-'137').
+src/Busses.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:109:	Local variable 'isINT' could be declared final
+src/Busses.java:110:	Found 'DU'-anomaly for variable 'isINT1' (lines '110'-'137').
+src/Busses.java:110:	Local variable 'isINT1' could be declared final
+src/Busses.java:112:	Avoid if (x != y) ..; else ..;
+src/Busses.java:114:	A method should have only one exit point, and that should be the last statement in the method
+src/Busses.java:116:	Avoid if (x != y) ..; else ..;
+src/Busses.java:122:	Local variable 'busnumber' could be declared final
+src/Busses.java:123:	Local variable 'busSeats' could be declared final
+src/Busses.java:124:	Local variable 'sql' could be declared final
+src/Busses.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:132:	Avoid printStackTrace(); use a logger call instead.
+src/Busses.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:135:	Avoid printStackTrace(); use a logger call instead.
+src/Busses.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:141:	publicMethodCommentRequirement Required
+src/Busses.java:142:	Found 'DD'-anomaly for variable 'success1' (lines '142'-'144').
+src/Busses.java:145:	A method should have only one exit point, and that should be the last statement in the method
+src/Busses.java:155:	Method names should not start with capital letters
+src/Busses.java:155:	Parameter 'comboBox' is not assigned and could be declared final
+src/Busses.java:155:	publicMethodCommentRequirement Required
+src/Busses.java:157:	Ensure that resources like this Connection object are closed after use
+src/Busses.java:157:	Found 'DD'-anomaly for variable 'conn' (lines '157'-'160').
+src/Busses.java:158:	Ensure that resources like this Statement object are closed after use
+src/Busses.java:158:	Found 'DD'-anomaly for variable 'stmt' (lines '158'-'161').
+src/Busses.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:162:	Avoid variables with short names like rs
+src/Busses.java:162:	Ensure that resources like this ResultSet object are closed after use
+src/Busses.java:162:	Local variable 'rs' could be declared final
+src/Busses.java:162:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:163:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:165:	Avoid variables with short names like id
+src/Busses.java:165:	Local variable 'id' could be declared final
+src/Busses.java:165:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:166:	Avoid unused local variables such as 'd'.
+src/Busses.java:166:	Avoid variables with short names like d
+src/Busses.java:166:	Found 'DD'-anomaly for variable 'd' (lines '166'-'166').
+src/Busses.java:166:	Found 'DU'-anomaly for variable 'd' (lines '166'-'178').
+src/Busses.java:166:	Local variable 'd' could be declared final
+src/Busses.java:166:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:167:	Avoid variables with short names like e
+src/Busses.java:167:	Local variable 'e' could be declared final
+src/Busses.java:167:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:174:	Avoid printStackTrace(); use a logger call instead.
+src/Busses.java:174:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:182:	Parameter 'BusNumber' is not assigned and could be declared final
+src/Busses.java:182:	Parameter 'givenSeatNumber' is not assigned and could be declared final
+src/Busses.java:182:	Variables should start with a lowercase character, 'BusNumber' starts with uppercase character.
+src/Busses.java:182:	publicMethodCommentRequirement Required
+src/Busses.java:184:	Found 'DD'-anomaly for variable 'MaxSeatsAvailable' (lines '184'-'194').
+src/Busses.java:184:	Variables should start with a lowercase character, 'MaxSeatsAvailable' starts with uppercase character.
+src/Busses.java:185:	Ensure that resources like this Connection object are closed after use
+src/Busses.java:185:	Found 'DD'-anomaly for variable 'conn' (lines '185'-'188').
+src/Busses.java:186:	Ensure that resources like this Statement object are closed after use
+src/Busses.java:186:	Found 'DD'-anomaly for variable 'stmt' (lines '186'-'189').
+src/Busses.java:189:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:190:	Avoid variables with short names like rs
+src/Busses.java:190:	Ensure that resources like this ResultSet object are closed after use
+src/Busses.java:190:	Local variable 'rs' could be declared final
+src/Busses.java:190:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:191:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:194:	Found 'DD'-anomaly for variable 'MaxSeatsAvailable' (lines '194'-'194').
+src/Busses.java:194:	Potential violation of Law of Demeter (object not created locally)
+src/Busses.java:200:	Avoid printStackTrace(); use a logger call instead.
+src/Busses.java:200:	Potential violation of Law of Demeter (object not created locally)
+src/BussesTest.java:6:	All classes and interfaces must belong to a named package
+src/BussesTest.java:6:	Each class should declare at least one constructor
+src/BussesTest.java:6:	headerCommentRequirement Required
+src/BussesTest.java:9:	publicMethodCommentRequirement Required
+src/BussesTest.java:10:	Local variable 'admin' could be declared final
+src/BussesTest.java:11:	Local variable 'selectedID' could be declared final
+src/BussesTest.java:12:	Local variable 'check' could be declared final
+src/BussesTest.java:13:	JUnit assertions should include a message
+src/BussesTest.java:13:	Use assertTrue(x)/assertFalse(x) instead of assertEquals(true, x)/assertEquals(false, x)   or assertEquals(Boolean.TRUE, x)/assertEquals(Boolean.FALSE, x).
+src/CashierScreen.java:1:	A high number of imports can indicate a high degree of coupling within an object.
+src/CashierScreen.java:5:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/CashierScreen.java:8:	Avoid unused imports such as 'org.eclipse.wb.swing.DateLabelFormatter'
+src/CashierScreen.java:10:	Avoid unused imports such as 'javafx.scene.control.DatePicker'
+src/CashierScreen.java:12:	Avoid unused imports such as 'javax.swing.JProgressBar'
+src/CashierScreen.java:13:	Avoid unused imports such as 'javax.swing.JEditorPane'
+src/CashierScreen.java:14:	Avoid unused imports such as 'javax.swing.JTabbedPane'
+src/CashierScreen.java:16:	Avoid unused imports such as 'javax.swing.JTextPane'
+src/CashierScreen.java:17:	Avoid unused imports such as 'java.awt.Panel'
+src/CashierScreen.java:18:	Avoid unused imports such as 'java.awt.TextField'
+src/CashierScreen.java:19:	Avoid unused imports such as 'java.awt.Label'
+src/CashierScreen.java:23:	Avoid unused imports such as 'java.util.Calendar'
+src/CashierScreen.java:26:	Avoid unused imports such as 'java.util.Properties'
+src/CashierScreen.java:28:	Avoid unused imports such as 'javax.swing.JPanel'
+src/CashierScreen.java:37:	Avoid unused imports such as 'com.toedter.calendar.JDateChooser'
+src/CashierScreen.java:38:	Avoid unused imports such as 'com.toedter.components.JLocaleChooser'
+src/CashierScreen.java:40:	Avoid unused imports such as 'javax.swing.JMenuBar'
+src/CashierScreen.java:41:	Avoid unused imports such as 'javax.swing.JToggleButton'
+src/CashierScreen.java:42:	Avoid unused imports such as 'javax.swing.JPasswordField'
+src/CashierScreen.java:43:	Avoid unused imports such as 'javax.swing.JMenu'
+src/CashierScreen.java:44:	Avoid unused imports such as 'java.awt.Button'
+src/CashierScreen.java:47:	Avoid unused imports such as 'java.awt.event.MouseAdapter'
+src/CashierScreen.java:48:	Avoid unused imports such as 'java.awt.event.MouseEvent'
+src/CashierScreen.java:51:	Avoid unused imports such as 'java.awt.event.KeyAdapter'
+src/CashierScreen.java:52:	Avoid unused imports such as 'java.awt.event.KeyEvent'
+src/CashierScreen.java:53:	Avoid unused imports such as 'javax.swing.JMenuItem'
+src/CashierScreen.java:55:	Avoid unused imports such as 'javax.swing.KeyStroke'
+src/CashierScreen.java:56:	Avoid unused imports such as 'java.awt.event.InputEvent'
+src/CashierScreen.java:57:	Avoid unused imports such as 'java.awt.Insets'
+src/CashierScreen.java:58:	Avoid unused imports such as 'javax.swing.JTextArea'
+src/CashierScreen.java:59:	Avoid unused imports such as 'javax.swing.JInternalFrame'
+src/CashierScreen.java:60:	Avoid unused imports such as 'javax.swing.JDesktopPane'
+src/CashierScreen.java:61:	Avoid unused imports such as 'javax.swing.JToolBar'
+src/CashierScreen.java:62:	Avoid unused imports such as 'javax.swing.JLayeredPane'
+src/CashierScreen.java:65:	Avoid unused imports such as 'javax.swing.JSpinner'
+src/CashierScreen.java:68:	All classes and interfaces must belong to a named package
+src/CashierScreen.java:68:	The class 'CashierScreen' has a Cyclomatic Complexity of 5 (Highest = 22).
+src/CashierScreen.java:68:	The class 'CashierScreen' has a Modified Cyclomatic Complexity of 5 (Highest = 19).
+src/CashierScreen.java:68:	The class 'CashierScreen' has a Standard Cyclomatic Complexity of 5 (Highest = 19).
+src/CashierScreen.java:68:	headerCommentRequirement Required
+src/CashierScreen.java:69:	Variables that are final and static should be all capitals, 'calendar' is not all capitals.
+src/CashierScreen.java:69:	fieldCommentRequirement Required
+src/CashierScreen.java:70:	Variables that are final and static should be all capitals, 'calendar1' is not all capitals.
+src/CashierScreen.java:70:	fieldCommentRequirement Required
+src/CashierScreen.java:71:	Avoid variables with short names like df
+src/CashierScreen.java:71:	Variables that are final and static should be all capitals, 'df' is not all capitals.
+src/CashierScreen.java:71:	fieldCommentRequirement Required
+src/CashierScreen.java:72:	Variables that are final and static should be all capitals, 'invoice' is not all capitals.
+src/CashierScreen.java:72:	fieldCommentRequirement Required
+src/CashierScreen.java:73:	Variables that are final and static should be all capitals, 'receipt' is not all capitals.
+src/CashierScreen.java:73:	fieldCommentRequirement Required
+src/CashierScreen.java:74:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:74:	fieldCommentRequirement Required
+src/CashierScreen.java:75:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:75:	fieldCommentRequirement Required
+src/CashierScreen.java:76:	Avoid excessively long variable names like departureDateField
+src/CashierScreen.java:76:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:76:	fieldCommentRequirement Required
+src/CashierScreen.java:77:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:77:	Variables should start with a lowercase character, 'LastNameField' starts with uppercase character.
+src/CashierScreen.java:77:	fieldCommentRequirement Required
+src/CashierScreen.java:78:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:78:	Variables should start with a lowercase character, 'CertificateField' starts with uppercase character.
+src/CashierScreen.java:78:	fieldCommentRequirement Required
+src/CashierScreen.java:79:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:79:	fieldCommentRequirement Required
+src/CashierScreen.java:80:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:80:	Private field 'NameField' could be made final; it is only initialized in the declaration or constructor.
+src/CashierScreen.java:80:	Variables should start with a lowercase character, 'NameField' starts with uppercase character.
+src/CashierScreen.java:80:	fieldCommentRequirement Required
+src/CashierScreen.java:81:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:81:	Private field 'SeatChosenField' could be made final; it is only initialized in the declaration or constructor.
+src/CashierScreen.java:81:	Variables should start with a lowercase character, 'SeatChosenField' starts with uppercase character.
+src/CashierScreen.java:81:	fieldCommentRequirement Required
+src/CashierScreen.java:82:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierScreen.java:82:	Private field 'comboBox' could be made final; it is only initialized in the declaration or constructor.
+src/CashierScreen.java:82:	fieldCommentRequirement Required
+src/CashierScreen.java:87:	Classes should not have non-constructor methods with the same name as the class
+src/CashierScreen.java:87:	Method names should not start with capital letters
+src/CashierScreen.java:88:	To be compliant to J2EE, a webapp should not use any thread.
+src/CashierScreen.java:89:	publicMethodCommentRequirement Required
+src/CashierScreen.java:91:	Local variable 'window' could be declared final
+src/CashierScreen.java:92:	Potential violation of Law of Demeter (static property access)
+src/CashierScreen.java:93:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/CashierScreen.java:94:	Avoid printStackTrace(); use a logger call instead.
+src/CashierScreen.java:104:	Overridable method 'last' called during object construction
+src/CashierScreen.java:105:	Overridable method 'loadDates' called during object construction
+src/CashierScreen.java:111:	Local variable 'lblH' could be declared final
+src/CashierScreen.java:116:	Local variable 'lblH_1' could be declared final
+src/CashierScreen.java:116:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblH_1' is not final.
+src/CashierScreen.java:121:	Local variable 'btnNewButton' could be declared final
+src/CashierScreen.java:123:	Parameter 'arg0' is not assigned and could be declared final
+src/CashierScreen.java:123:	publicMethodCommentRequirement Required
+src/CashierScreen.java:138:	Local variable 'label' could be declared final
+src/CashierScreen.java:142:	Local variable 'lblNewLabel' could be declared final
+src/CashierScreen.java:146:	Local variable 'separator' could be declared final
+src/CashierScreen.java:156:	Local variable 'NumberOfSeats' could be declared final
+src/CashierScreen.java:156:	Variables should start with a lowercase character, 'NumberOfSeats' starts with uppercase character.
+src/CashierScreen.java:160:	Local variable 'label_1' could be declared final
+src/CashierScreen.java:160:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_1' is not final.
+src/CashierScreen.java:178:	To avoid mistakes add a comment at the beginning of the loadDates method if you want a default access modifier
+src/CashierScreen.java:178:	Use explicit scoping instead of the default package private level
+src/CashierScreen.java:181:	Local variable 'departdate' could be declared final
+src/CashierScreen.java:182:	Local variable 'departureDate' could be declared final
+src/CashierScreen.java:182:	Static DateFormatter objects should be accessed in a synchronized manner
+src/CashierScreen.java:186:	Avoid really long methods.
+src/CashierScreen.java:186:	The method 'initialize' has a Cyclomatic Complexity of 22.
+src/CashierScreen.java:186:	The method 'initialize' has a Modified Cyclomatic Complexity of 19.
+src/CashierScreen.java:186:	The method 'initialize' has a Standard Cyclomatic Complexity of 19.
+src/CashierScreen.java:186:	The method initialize() has an NCSS line count of 103
+src/CashierScreen.java:186:	The method initialize() has an NPath complexity of 240
+src/CashierScreen.java:191:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:193:	Local variable 'lblWelcomeCashier' could be declared final
+src/CashierScreen.java:196:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:202:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:203:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:206:	Avoid variables with short names like e
+src/CashierScreen.java:206:	Parameter 'e' is not assigned and could be declared final
+src/CashierScreen.java:206:	publicMethodCommentRequirement Required
+src/CashierScreen.java:207:	Local variable 'departdate' could be declared final
+src/CashierScreen.java:208:	Local variable 'departureDate' could be declared final
+src/CashierScreen.java:208:	Static DateFormatter objects should be accessed in a synchronized manner
+src/CashierScreen.java:217:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:218:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:221:	Avoid variables with short names like e
+src/CashierScreen.java:221:	Parameter 'e' is not assigned and could be declared final
+src/CashierScreen.java:221:	publicMethodCommentRequirement Required
+src/CashierScreen.java:222:	Local variable 'retdate' could be declared final
+src/CashierScreen.java:223:	Local variable 'returnDate' could be declared final
+src/CashierScreen.java:223:	Static DateFormatter objects should be accessed in a synchronized manner
+src/CashierScreen.java:233:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:235:	Local variable 'label' could be declared final
+src/CashierScreen.java:237:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:239:	Local variable 'label_1' could be declared final
+src/CashierScreen.java:239:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_1' is not final.
+src/CashierScreen.java:243:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:250:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:257:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:262:	Local variable 'label_2' could be declared final
+src/CashierScreen.java:262:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_2' is not final.
+src/CashierScreen.java:266:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:267:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:267:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:268:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:268:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:269:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:270:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:275:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:277:	Local variable 'chckbxNewCheckBox' could be declared final
+src/CashierScreen.java:279:	Avoid variables with short names like e
+src/CashierScreen.java:279:	Parameter 'e' is not assigned and could be declared final
+src/CashierScreen.java:279:	publicMethodCommentRequirement Required
+src/CashierScreen.java:280:	Local variable 'month' could be declared final
+src/CashierScreen.java:280:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:281:	Local variable 'year' could be declared final
+src/CashierScreen.java:281:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:282:	Local variable 'day' could be declared final
+src/CashierScreen.java:282:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:284:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:285:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:286:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:292:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:293:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:294:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:296:	Local variable 'chosendate' could be declared final
+src/CashierScreen.java:297:	Local variable 'chosenDate' could be declared final
+src/CashierScreen.java:297:	Static DateFormatter objects should be accessed in a synchronized manner
+src/CashierScreen.java:304:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:308:	Local variable 'btnLogOut' could be declared final
+src/CashierScreen.java:310:	Parameter 'arg0' is not assigned and could be declared final
+src/CashierScreen.java:310:	publicMethodCommentRequirement Required
+src/CashierScreen.java:312:	Local variable 'login' could be declared final
+src/CashierScreen.java:317:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:319:	Local variable 'btnE' could be declared final
+src/CashierScreen.java:322:	Avoid really long methods.
+src/CashierScreen.java:322:	Avoid variables with short names like e
+src/CashierScreen.java:322:	Parameter 'e' is not assigned and could be declared final
+src/CashierScreen.java:322:	The method 'actionPerformed' has a Cyclomatic Complexity of 12.
+src/CashierScreen.java:322:	The method 'actionPerformed' has a Modified Cyclomatic Complexity of 11.
+src/CashierScreen.java:322:	The method 'actionPerformed' has a Standard Cyclomatic Complexity of 11.
+src/CashierScreen.java:322:	publicMethodCommentRequirement Required
+src/CashierScreen.java:324:	Found 'DD'-anomaly for variable 'available' (lines '324'-'342').
+src/CashierScreen.java:324:	Found 'DD'-anomaly for variable 'available' (lines '324'-'342').
+src/CashierScreen.java:324:	Found 'DD'-anomaly for variable 'available' (lines '324'-'342').
+src/CashierScreen.java:324:	Found 'DD'-anomaly for variable 'available' (lines '324'-'342').
+src/CashierScreen.java:324:	Found 'DD'-anomaly for variable 'available' (lines '324'-'342').
+src/CashierScreen.java:324:	Found 'DD'-anomaly for variable 'available' (lines '324'-'342').
+src/CashierScreen.java:324:	Found 'DD'-anomaly for variable 'available' (lines '324'-'342').
+src/CashierScreen.java:324:	Found 'DU'-anomaly for variable 'available' (lines '324'-'520').
+src/CashierScreen.java:324:	Found 'DU'-anomaly for variable 'available' (lines '324'-'520').
+src/CashierScreen.java:324:	Found 'DU'-anomaly for variable 'available' (lines '324'-'520').
+src/CashierScreen.java:324:	Found 'DU'-anomaly for variable 'available' (lines '324'-'520').
+src/CashierScreen.java:324:	Found 'DU'-anomaly for variable 'available' (lines '324'-'520').
+src/CashierScreen.java:324:	Found 'DU'-anomaly for variable 'available' (lines '324'-'520').
+src/CashierScreen.java:326:	Local variable 'seat' could be declared final
+src/CashierScreen.java:326:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:326:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:326:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:326:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/CashierScreen.java:331:	Local variable 'bus' could be declared final
+src/CashierScreen.java:332:	Local variable 'parts' could be declared final
+src/CashierScreen.java:332:	Potential violation of Law of Demeter (object not created locally)
+src/CashierScreen.java:333:	Local variable 'busNO' could be declared final
+src/CashierScreen.java:333:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:333:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:335:	Local variable 'isINTbusNO' could be declared final
+src/CashierScreen.java:336:	Local variable 'isINTseat' could be declared final
+src/CashierScreen.java:339:	Local variable 'busnumber' could be declared final
+src/CashierScreen.java:340:	Local variable 'busseat' could be declared final
+src/CashierScreen.java:342:	Found 'DU'-anomaly for variable 'available' (lines '342'-'520').
+src/CashierScreen.java:342:	Found 'DU'-anomaly for variable 'available' (lines '342'-'520').
+src/CashierScreen.java:342:	Found 'DU'-anomaly for variable 'available' (lines '342'-'520').
+src/CashierScreen.java:342:	Found 'DU'-anomaly for variable 'available' (lines '342'-'520').
+src/CashierScreen.java:342:	Found 'DU'-anomaly for variable 'available' (lines '342'-'520').
+src/CashierScreen.java:342:	Found 'DU'-anomaly for variable 'available' (lines '342'-'520').
+src/CashierScreen.java:343:	Local variable 'MaxSeatsAvailable' could be declared final
+src/CashierScreen.java:343:	Variables should start with a lowercase character, 'MaxSeatsAvailable' starts with uppercase character.
+src/CashierScreen.java:349:	Found 'DU'-anomaly for variable 'name' (lines '349'-'520').
+src/CashierScreen.java:349:	Found 'DU'-anomaly for variable 'name' (lines '349'-'520').
+src/CashierScreen.java:349:	Found 'DU'-anomaly for variable 'name' (lines '349'-'520').
+src/CashierScreen.java:349:	Found 'DU'-anomaly for variable 'name' (lines '349'-'520').
+src/CashierScreen.java:349:	Found 'DU'-anomaly for variable 'name' (lines '349'-'520').
+src/CashierScreen.java:349:	Found 'DU'-anomaly for variable 'name' (lines '349'-'520').
+src/CashierScreen.java:349:	Found 'DU'-anomaly for variable 'name' (lines '349'-'520').
+src/CashierScreen.java:349:	Local variable 'name' could be declared final
+src/CashierScreen.java:349:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:349:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:349:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:349:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/CashierScreen.java:350:	Found 'DU'-anomaly for variable 'lastname' (lines '350'-'520').
+src/CashierScreen.java:350:	Found 'DU'-anomaly for variable 'lastname' (lines '350'-'520').
+src/CashierScreen.java:350:	Found 'DU'-anomaly for variable 'lastname' (lines '350'-'520').
+src/CashierScreen.java:350:	Found 'DU'-anomaly for variable 'lastname' (lines '350'-'520').
+src/CashierScreen.java:350:	Found 'DU'-anomaly for variable 'lastname' (lines '350'-'520').
+src/CashierScreen.java:350:	Found 'DU'-anomaly for variable 'lastname' (lines '350'-'520').
+src/CashierScreen.java:350:	Found 'DU'-anomaly for variable 'lastname' (lines '350'-'520').
+src/CashierScreen.java:350:	Local variable 'lastname' could be declared final
+src/CashierScreen.java:350:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:350:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:350:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:350:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/CashierScreen.java:351:	Found 'DU'-anomaly for variable 'cert' (lines '351'-'520').
+src/CashierScreen.java:351:	Found 'DU'-anomaly for variable 'cert' (lines '351'-'520').
+src/CashierScreen.java:351:	Found 'DU'-anomaly for variable 'cert' (lines '351'-'520').
+src/CashierScreen.java:351:	Found 'DU'-anomaly for variable 'cert' (lines '351'-'520').
+src/CashierScreen.java:351:	Found 'DU'-anomaly for variable 'cert' (lines '351'-'520').
+src/CashierScreen.java:351:	Found 'DU'-anomaly for variable 'cert' (lines '351'-'520').
+src/CashierScreen.java:351:	Found 'DU'-anomaly for variable 'cert' (lines '351'-'520').
+src/CashierScreen.java:351:	Local variable 'cert' could be declared final
+src/CashierScreen.java:351:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:351:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:351:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:351:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'360').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'360').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'360').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'360').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'360').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'360').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'360').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'364').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'364').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'364').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'364').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'364').
+src/CashierScreen.java:353:	Found 'DD'-anomaly for variable 'countErrors' (lines '353'-'364').
+src/CashierScreen.java:354:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:358:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:360:	Found 'DD'-anomaly for variable 'countErrors' (lines '360'-'364').
+src/CashierScreen.java:360:	Found 'DD'-anomaly for variable 'countErrors' (lines '360'-'364').
+src/CashierScreen.java:360:	Found 'DD'-anomaly for variable 'countErrors' (lines '360'-'364').
+src/CashierScreen.java:360:	Found 'DD'-anomaly for variable 'countErrors' (lines '360'-'364').
+src/CashierScreen.java:360:	Found 'DD'-anomaly for variable 'countErrors' (lines '360'-'364').
+src/CashierScreen.java:360:	Found 'DD'-anomaly for variable 'countErrors' (lines '360'-'364').
+src/CashierScreen.java:360:	Found 'DD'-anomaly for variable 'countErrors' (lines '360'-'364').
+src/CashierScreen.java:362:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:373:	Found 'DU'-anomaly for variable 'retDate' (lines '373'-'520').
+src/CashierScreen.java:373:	Found 'DU'-anomaly for variable 'retDate' (lines '373'-'520').
+src/CashierScreen.java:373:	Found 'DU'-anomaly for variable 'retDate' (lines '373'-'520').
+src/CashierScreen.java:373:	Found 'DU'-anomaly for variable 'retDate' (lines '373'-'520').
+src/CashierScreen.java:373:	Found 'DU'-anomaly for variable 'retDate' (lines '373'-'520').
+src/CashierScreen.java:373:	Found 'DU'-anomaly for variable 'retDate' (lines '373'-'520').
+src/CashierScreen.java:373:	Found 'DU'-anomaly for variable 'retDate' (lines '373'-'520').
+src/CashierScreen.java:373:	Local variable 'retDate' could be declared final
+src/CashierScreen.java:373:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:374:	Local variable 'departDate' could be declared final
+src/CashierScreen.java:374:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:375:	Local variable 'receiptValue' could be declared final
+src/CashierScreen.java:378:	Found 'DD'-anomaly for variable 'parsed' (lines '378'-'386').
+src/CashierScreen.java:378:	Found 'DD'-anomaly for variable 'parsed' (lines '378'-'386').
+src/CashierScreen.java:378:	Found 'DD'-anomaly for variable 'parsed' (lines '378'-'386').
+src/CashierScreen.java:378:	Found 'DD'-anomaly for variable 'parsed' (lines '378'-'386').
+src/CashierScreen.java:378:	Found 'DD'-anomaly for variable 'parsed' (lines '378'-'386').
+src/CashierScreen.java:378:	Found 'DD'-anomaly for variable 'parsed' (lines '378'-'386').
+src/CashierScreen.java:378:	Found 'DU'-anomaly for variable 'parsed' (lines '378'-'520').
+src/CashierScreen.java:378:	Found 'DU'-anomaly for variable 'parsed' (lines '378'-'520').
+src/CashierScreen.java:378:	Found 'DU'-anomaly for variable 'parsed' (lines '378'-'520').
+src/CashierScreen.java:378:	Found 'DU'-anomaly for variable 'parsed' (lines '378'-'520').
+src/CashierScreen.java:378:	Found 'DU'-anomaly for variable 'parsed' (lines '378'-'520').
+src/CashierScreen.java:378:	Found 'DU'-anomaly for variable 'parsed' (lines '378'-'520').
+src/CashierScreen.java:378:	Found 'DU'-anomaly for variable 'parsed' (lines '378'-'520').
+src/CashierScreen.java:379:	Found 'DD'-anomaly for variable 'returnDate' (lines '379'-'391').
+src/CashierScreen.java:379:	Found 'DD'-anomaly for variable 'returnDate' (lines '379'-'391').
+src/CashierScreen.java:379:	Found 'DD'-anomaly for variable 'returnDate' (lines '379'-'391').
+src/CashierScreen.java:379:	Found 'DD'-anomaly for variable 'returnDate' (lines '379'-'391').
+src/CashierScreen.java:379:	Found 'DD'-anomaly for variable 'returnDate' (lines '379'-'391').
+src/CashierScreen.java:379:	Found 'DD'-anomaly for variable 'returnDate' (lines '379'-'391').
+src/CashierScreen.java:380:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:380:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:386:	Static DateFormatter objects should be accessed in a synchronized manner
+src/CashierScreen.java:389:	Avoid printStackTrace(); use a logger call instead.
+src/CashierScreen.java:389:	Potential violation of Law of Demeter (object not created locally)
+src/CashierScreen.java:391:	Potential violation of Law of Demeter (object not created locally)
+src/CashierScreen.java:397:	Found 'DD'-anomaly for variable 'parsed1' (lines '397'-'399').
+src/CashierScreen.java:397:	Found 'DD'-anomaly for variable 'parsed1' (lines '397'-'399').
+src/CashierScreen.java:397:	Found 'DD'-anomaly for variable 'parsed1' (lines '397'-'399').
+src/CashierScreen.java:397:	Found 'DD'-anomaly for variable 'parsed1' (lines '397'-'399').
+src/CashierScreen.java:397:	Found 'DD'-anomaly for variable 'parsed1' (lines '397'-'399').
+src/CashierScreen.java:397:	Found 'DD'-anomaly for variable 'parsed1' (lines '397'-'399').
+src/CashierScreen.java:397:	Found 'DD'-anomaly for variable 'parsed1' (lines '397'-'399').
+src/CashierScreen.java:399:	Static DateFormatter objects should be accessed in a synchronized manner
+src/CashierScreen.java:402:	Avoid printStackTrace(); use a logger call instead.
+src/CashierScreen.java:402:	Potential violation of Law of Demeter (object not created locally)
+src/CashierScreen.java:404:	Local variable 'departureDate' could be declared final
+src/CashierScreen.java:404:	Potential violation of Law of Demeter (object not created locally)
+src/CashierScreen.java:415:	Local variable 'lastNumber' could be declared final
+src/CashierScreen.java:424:	Avoid variables with short names like pj
+src/CashierScreen.java:424:	Local variable 'pj' could be declared final
+src/CashierScreen.java:425:	Avoid unused local variables such as 'pf'.
+src/CashierScreen.java:425:	Avoid variables with short names like pf
+src/CashierScreen.java:425:	Found 'DU'-anomaly for variable 'pf' (lines '425'-'520').
+src/CashierScreen.java:425:	Found 'DU'-anomaly for variable 'pf' (lines '425'-'520').
+src/CashierScreen.java:425:	Found 'DU'-anomaly for variable 'pf' (lines '425'-'520').
+src/CashierScreen.java:425:	Found 'DU'-anomaly for variable 'pf' (lines '425'-'520').
+src/CashierScreen.java:425:	Found 'DU'-anomaly for variable 'pf' (lines '425'-'520').
+src/CashierScreen.java:425:	Found 'DU'-anomaly for variable 'pf' (lines '425'-'520').
+src/CashierScreen.java:425:	Found 'DU'-anomaly for variable 'pf' (lines '425'-'520').
+src/CashierScreen.java:425:	Local variable 'pf' could be declared final
+src/CashierScreen.java:425:	Potential violation of Law of Demeter (object not created locally)
+src/CashierScreen.java:425:	Potential violation of Law of Demeter (object not created locally)
+src/CashierScreen.java:450:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:454:	Avoid variables with short names like e
+src/CashierScreen.java:454:	Parameter 'e' is not assigned and could be declared final
+src/CashierScreen.java:454:	publicMethodCommentRequirement Required
+src/CashierScreen.java:460:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:466:	Parameter 'arg0' is not assigned and could be declared final
+src/CashierScreen.java:466:	publicMethodCommentRequirement Required
+src/CashierScreen.java:473:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:475:	Local variable 'label_3' could be declared final
+src/CashierScreen.java:475:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_3' is not final.
+src/CashierScreen.java:479:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:481:	Local variable 'label_5' could be declared final
+src/CashierScreen.java:481:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_5' is not final.
+src/CashierScreen.java:483:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:488:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:490:	Local variable 'label_6' could be declared final
+src/CashierScreen.java:490:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_6' is not final.
+src/CashierScreen.java:492:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:496:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:504:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:507:	Local variable 'lastNumber' could be declared final
+src/CashierScreen.java:510:	Local variable 'label_7' could be declared final
+src/CashierScreen.java:510:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_7' is not final.
+src/CashierScreen.java:514:	Potential violation of Law of Demeter (method chain calls)
+src/CashierScreen.java:521:	To avoid mistakes add a comment at the beginning of the last method if you want a default access modifier
+src/CashierScreen.java:521:	Use explicit scoping instead of the default package private level
+src/CashierScreen.java:522:	Local variable 'lastNumber' could be declared final
+src/CashierScreen.java:523:	Consider simply returning the value vs storing it in local variable 'lastNumber'
+src/CashierScreen.java:525:	publicMethodCommentRequirement Required
+src/CashierSearchAndDelete.java:2:	A high number of imports can indicate a high degree of coupling within an object.
+src/CashierSearchAndDelete.java:7:	Avoid unused imports such as 'java.awt.Component'
+src/CashierSearchAndDelete.java:8:	Avoid unused imports such as 'javax.swing.Box'
+src/CashierSearchAndDelete.java:9:	Avoid unused imports such as 'java.awt.Label'
+src/CashierSearchAndDelete.java:11:	Avoid unused imports such as 'java.sql.SQLException'
+src/CashierSearchAndDelete.java:14:	Avoid unused imports such as 'javax.swing.ListModel'
+src/CashierSearchAndDelete.java:16:	Avoid unused imports such as 'java.awt.Panel'
+src/CashierSearchAndDelete.java:17:	Avoid unused imports such as 'java.awt.ScrollPane'
+src/CashierSearchAndDelete.java:18:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/CashierSearchAndDelete.java:19:	Avoid unused imports such as 'javax.swing.JList'
+src/CashierSearchAndDelete.java:22:	Avoid unused imports such as 'javax.swing.border.BevelBorder'
+src/CashierSearchAndDelete.java:24:	Avoid unused imports such as 'javax.swing.AbstractListModel'
+src/CashierSearchAndDelete.java:25:	Avoid unused imports such as 'java.awt.List'
+src/CashierSearchAndDelete.java:26:	Avoid unused imports such as 'java.awt.Choice'
+src/CashierSearchAndDelete.java:27:	Avoid unused imports such as 'java.awt.TextField'
+src/CashierSearchAndDelete.java:28:	Avoid unused imports such as 'javax.swing.JTextPane'
+src/CashierSearchAndDelete.java:32:	Avoid unused imports such as 'javax.swing.table.TableColumnModel'
+src/CashierSearchAndDelete.java:33:	Avoid unused imports such as 'javax.swing.table.TableModel'
+src/CashierSearchAndDelete.java:38:	Avoid unused imports such as 'java.awt.SystemColor'
+src/CashierSearchAndDelete.java:39:	Avoid unused imports such as 'javax.swing.DropMode'
+src/CashierSearchAndDelete.java:41:	Avoid unused imports such as 'javax.swing.border.CompoundBorder'
+src/CashierSearchAndDelete.java:42:	Avoid unused imports such as 'javax.swing.border.EtchedBorder'
+src/CashierSearchAndDelete.java:44:	Avoid unused imports such as 'javax.swing.JTextArea'
+src/CashierSearchAndDelete.java:45:	Avoid unused imports such as 'java.awt.Font'
+src/CashierSearchAndDelete.java:46:	All classes and interfaces must belong to a named package
+src/CashierSearchAndDelete.java:46:	headerCommentRequirement Required
+src/CashierSearchAndDelete.java:48:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierSearchAndDelete.java:48:	fieldCommentRequirement Required
+src/CashierSearchAndDelete.java:49:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierSearchAndDelete.java:49:	Variables should start with a lowercase character, 'TicketNumber' starts with uppercase character.
+src/CashierSearchAndDelete.java:49:	fieldCommentRequirement Required
+src/CashierSearchAndDelete.java:50:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierSearchAndDelete.java:50:	fieldCommentRequirement Required
+src/CashierSearchAndDelete.java:51:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/CashierSearchAndDelete.java:51:	fieldCommentRequirement Required
+src/CashierSearchAndDelete.java:56:	Classes should not have non-constructor methods with the same name as the class
+src/CashierSearchAndDelete.java:56:	Method names should not start with capital letters
+src/CashierSearchAndDelete.java:57:	To be compliant to J2EE, a webapp should not use any thread.
+src/CashierSearchAndDelete.java:58:	publicMethodCommentRequirement Required
+src/CashierSearchAndDelete.java:60:	Local variable 'window' could be declared final
+src/CashierSearchAndDelete.java:61:	Potential violation of Law of Demeter (static property access)
+src/CashierSearchAndDelete.java:62:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/CashierSearchAndDelete.java:63:	Avoid printStackTrace(); use a logger call instead.
+src/CashierSearchAndDelete.java:79:	Avoid really long methods.
+src/CashierSearchAndDelete.java:84:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:86:	Local variable 'lblWelcomeAdmin' could be declared final
+src/CashierSearchAndDelete.java:89:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:91:	Local variable 'AddaCashier' could be declared final
+src/CashierSearchAndDelete.java:91:	Variables should start with a lowercase character, 'AddaCashier' starts with uppercase character.
+src/CashierSearchAndDelete.java:93:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:98:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:102:	Local variable 'btnLogOut' could be declared final
+src/CashierSearchAndDelete.java:104:	Parameter 'arg0' is not assigned and could be declared final
+src/CashierSearchAndDelete.java:104:	publicMethodCommentRequirement Required
+src/CashierSearchAndDelete.java:110:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:112:	Local variable 'scrollPane' could be declared final
+src/CashierSearchAndDelete.java:115:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:126:	Local variable 'btnDelete' could be declared final
+src/CashierSearchAndDelete.java:130:	Parameter 'arg0' is not assigned and could be declared final
+src/CashierSearchAndDelete.java:130:	publicMethodCommentRequirement Required
+src/CashierSearchAndDelete.java:133:	Local variable 'row' could be declared final
+src/CashierSearchAndDelete.java:137:	Local variable 'selectedID' could be declared final
+src/CashierSearchAndDelete.java:140:	Local variable 'modelRow' could be declared final
+src/CashierSearchAndDelete.java:155:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:157:	Local variable 'btnSearch' could be declared final
+src/CashierSearchAndDelete.java:159:	Parameter 'arg0' is not assigned and could be declared final
+src/CashierSearchAndDelete.java:159:	publicMethodCommentRequirement Required
+src/CashierSearchAndDelete.java:161:	Local variable 'number' could be declared final
+src/CashierSearchAndDelete.java:161:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:161:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:162:	Local variable 'isINT' could be declared final
+src/CashierSearchAndDelete.java:165:	Avoid variables with short names like id
+src/CashierSearchAndDelete.java:165:	Local variable 'id' could be declared final
+src/CashierSearchAndDelete.java:176:	Potential violation of Law of Demeter (method chain calls)
+src/CashierSearchAndDelete.java:180:	publicMethodCommentRequirement Required
+src/CashierSearchAndDelete.java:184:	Method names should not start with capital letters
+src/CashierSearchAndDelete.java:184:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'col_index' is not final.
+src/CashierSearchAndDelete.java:184:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'row_index' is not final.
+src/CashierSearchAndDelete.java:184:	Parameter 'col_index' is not assigned and could be declared final
+src/CashierSearchAndDelete.java:184:	Parameter 'row_index' is not assigned and could be declared final
+src/CashierSearchAndDelete.java:184:	publicMethodCommentRequirement Required
+src/CashierSearchAndDelete.java:186:	Potential violation of Law of Demeter (method chain calls)
+src/LoginScreen.java:1:	A high number of imports can indicate a high degree of coupling within an object.
+src/LoginScreen.java:1:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/LoginScreen.java:8:	Avoid unused imports such as 'java.awt.GridBagLayout'
+src/LoginScreen.java:10:	Avoid unused imports such as 'java.awt.GridBagConstraints'
+src/LoginScreen.java:11:	Avoid unused imports such as 'java.awt.Insets'
+src/LoginScreen.java:13:	Avoid unused imports such as 'java.awt.GridLayout'
+src/LoginScreen.java:16:	Avoid unused imports such as 'javax.swing.JRootPane'
+src/LoginScreen.java:18:	Avoid unused imports such as 'java.awt.Canvas'
+src/LoginScreen.java:19:	Avoid unused imports such as 'java.awt.Panel'
+src/LoginScreen.java:22:	Avoid unused imports such as 'java.sql.SQLException'
+src/LoginScreen.java:25:	Avoid unused imports such as 'javax.swing.Box'
+src/LoginScreen.java:27:	Avoid unused imports such as 'java.awt.event.KeyAdapter'
+src/LoginScreen.java:28:	Avoid unused imports such as 'java.awt.event.KeyEvent'
+src/LoginScreen.java:32:	Avoid unused imports such as 'java.awt.Frame'
+src/LoginScreen.java:34:	Avoid unused imports such as 'javax.swing.DropMode'
+src/LoginScreen.java:35:	Avoid unused imports such as 'java.awt.FlowLayout'
+src/LoginScreen.java:39:	All classes and interfaces must belong to a named package
+src/LoginScreen.java:39:	headerCommentRequirement Required
+src/LoginScreen.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/LoginScreen.java:41:	Perhaps 'contentPane' could be replaced by a local variable.
+src/LoginScreen.java:41:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/LoginScreen.java:41:	fieldCommentRequirement Required
+src/LoginScreen.java:42:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/LoginScreen.java:42:	Private field 'passwordField' could be made final; it is only initialized in the declaration or constructor.
+src/LoginScreen.java:42:	fieldCommentRequirement Required
+src/LoginScreen.java:43:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/LoginScreen.java:43:	Perhaps 'lblUsername' could be replaced by a local variable.
+src/LoginScreen.java:43:	Private field 'lblUsername' could be made final; it is only initialized in the declaration or constructor.
+src/LoginScreen.java:43:	fieldCommentRequirement Required
+src/LoginScreen.java:44:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/LoginScreen.java:44:	Perhaps 'lblPassword' could be replaced by a local variable.
+src/LoginScreen.java:44:	Private field 'lblPassword' could be made final; it is only initialized in the declaration or constructor.
+src/LoginScreen.java:44:	fieldCommentRequirement Required
+src/LoginScreen.java:45:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/LoginScreen.java:45:	Private field 'usernameField' could be made final; it is only initialized in the declaration or constructor.
+src/LoginScreen.java:45:	fieldCommentRequirement Required
+src/LoginScreen.java:46:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/LoginScreen.java:46:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textArea_2' is not final.
+src/LoginScreen.java:46:	Perhaps 'textArea_2' could be replaced by a local variable.
+src/LoginScreen.java:46:	Private field 'textArea_2' could be made final; it is only initialized in the declaration or constructor.
+src/LoginScreen.java:46:	fieldCommentRequirement Required
+src/LoginScreen.java:51:	Parameter 'args' is not assigned and could be declared final
+src/LoginScreen.java:52:	To be compliant to J2EE, a webapp should not use any thread.
+src/LoginScreen.java:53:	publicMethodCommentRequirement Required
+src/LoginScreen.java:55:	Local variable 'frame' could be declared final
+src/LoginScreen.java:57:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/LoginScreen.java:58:	Avoid printStackTrace(); use a logger call instead.
+src/LoginScreen.java:67:	It is a good practice to call super() in a constructor
+src/LoginScreen.java:81:	Local variable 'loginbutton' could be declared final
+src/LoginScreen.java:84:	Parameter 'arg0' is not assigned and could be declared final
+src/LoginScreen.java:84:	publicMethodCommentRequirement Required
+src/LoginScreen.java:88:	Local variable 'thisUser' could be declared final
+src/LoginScreen.java:88:	Potential violation of Law of Demeter (method chain calls)
+src/LoginScreen.java:88:	Potential violation of Law of Demeter (method chain calls)
+src/LoginScreen.java:88:	Potential violation of Law of Demeter (method chain calls)
+src/LoginScreen.java:88:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/LoginScreen.java:89:	Local variable 'thisPassword' could be declared final
+src/LoginScreen.java:90:	An operation on an Immutable object (String, BigDecimal or BigInteger) wont change the object itself
+src/LoginScreen.java:90:	Potential violation of Law of Demeter (method chain calls)
+src/LoginScreen.java:90:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/LoginScreen.java:119:	Local variable 'panel' could be declared final
+src/LoginScreen.java:138:	Local variable 'textArea' could be declared final
+src/LoginScreen.java:150:	Local variable 'label' could be declared final
+src/LoginScreen.java:154:	Local variable 'label_1' could be declared final
+src/LoginScreen.java:154:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_1' is not final.
+src/LoginScreen.java:158:	Local variable 'label_2' could be declared final
+src/LoginScreen.java:158:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_2' is not final.
+src/LoginScreen.java:162:	Local variable 'label_3' could be declared final
+src/LoginScreen.java:162:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_3' is not final.
+src/LoginScreen.java:166:	Local variable 'label_4' could be declared final
+src/LoginScreen.java:166:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_4' is not final.
+src/LoginScreen.java:170:	Local variable 'label_5' could be declared final
+src/LoginScreen.java:170:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_5' is not final.
+src/LoginScreen.java:177:	publicMethodCommentRequirement Required
+src/Tickets.java:5:	Avoid unused imports such as 'javax.annotation.processing.Messager'
+src/Tickets.java:6:	Avoid unused imports such as 'javax.swing.JPanel'
+src/Tickets.java:7:	Avoid unused imports such as 'javax.swing.JTable'
+src/Tickets.java:10:	Avoid unused imports such as 'com.mysql.jdbc.StringUtils'
+src/Tickets.java:13:	Avoid unused imports such as 'java.text.DateFormat'
+src/Tickets.java:14:	Avoid unused imports such as 'java.text.ParseException'
+src/Tickets.java:15:	Avoid unused imports such as 'java.text.SimpleDateFormat'
+src/Tickets.java:16:	Avoid unused imports such as 'java.time.LocalDate'
+src/Tickets.java:19:	All classes and interfaces must belong to a named package
+src/Tickets.java:19:	headerCommentRequirement Required
+src/Tickets.java:20:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/Tickets.java:22:	fieldCommentRequirement Required
+src/Tickets.java:23:	fieldCommentRequirement Required
+src/Tickets.java:25:	The String literal "com.mysql.jdbc.Driver" appears 4 times in this file; the first occurrence is on line 25
+src/Tickets.java:25:	To avoid mistakes add a comment at the beginning of the JDBC_DRIVER field if you want a default access modifier
+src/Tickets.java:25:	Use explicit scoping instead of the default package private level
+src/Tickets.java:25:	fieldCommentRequirement Required
+src/Tickets.java:26:	To avoid mistakes add a comment at the beginning of the connectionURL field if you want a default access modifier
+src/Tickets.java:26:	Use explicit scoping instead of the default package private level
+src/Tickets.java:26:	Variables that are final and static should be all capitals, 'connectionURL' is not all capitals.
+src/Tickets.java:26:	fieldCommentRequirement Required
+src/Tickets.java:29:	Avoid excessively long variable names like usernamefordatabase
+src/Tickets.java:29:	To avoid mistakes add a comment at the beginning of the usernamefordatabase field if you want a default access modifier
+src/Tickets.java:29:	Use explicit scoping instead of the default package private level
+src/Tickets.java:29:	Variables that are final and static should be all capitals, 'usernamefordatabase' is not all capitals.
+src/Tickets.java:29:	fieldCommentRequirement Required
+src/Tickets.java:30:	Avoid excessively long variable names like passwordfordatabase
+src/Tickets.java:30:	To avoid mistakes add a comment at the beginning of the passwordfordatabase field if you want a default access modifier
+src/Tickets.java:30:	Use explicit scoping instead of the default package private level
+src/Tickets.java:30:	Variables that are final and static should be all capitals, 'passwordfordatabase' is not all capitals.
+src/Tickets.java:30:	fieldCommentRequirement Required
+src/Tickets.java:35:	Avoid variables with short names like id
+src/Tickets.java:35:	Method names should not start with capital letters
+src/Tickets.java:35:	Parameter 'frame' is not assigned and could be declared final
+src/Tickets.java:35:	Parameter 'id' is not assigned and could be declared final
+src/Tickets.java:35:	Parameter 'model' is not assigned and could be declared final
+src/Tickets.java:35:	publicMethodCommentRequirement Required
+src/Tickets.java:37:	Ensure that resources like this Connection object are closed after use
+src/Tickets.java:37:	Found 'DD'-anomaly for variable 'conn' (lines '37'-'41').
+src/Tickets.java:38:	Ensure that resources like this Statement object are closed after use
+src/Tickets.java:38:	Found 'DD'-anomaly for variable 'stmt' (lines '38'-'42').
+src/Tickets.java:39:	Found 'DD'-anomaly for variable 'count' (lines '39'-'64').
+src/Tickets.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:43:	Avoid variables with short names like rs
+src/Tickets.java:43:	Do not add empty strings
+src/Tickets.java:43:	Ensure that resources like this ResultSet object are closed after use
+src/Tickets.java:43:	Local variable 'rs' could be declared final
+src/Tickets.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:45:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:47:	Local variable 'tno' could be declared final
+src/Tickets.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:48:	Avoid variables with short names like n
+src/Tickets.java:48:	Local variable 'n' could be declared final
+src/Tickets.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:49:	Avoid variables with short names like d
+src/Tickets.java:49:	Local variable 'd' could be declared final
+src/Tickets.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:50:	Avoid variables with short names like e
+src/Tickets.java:50:	Local variable 'e' could be declared final
+src/Tickets.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:51:	Avoid variables with short names like f
+src/Tickets.java:51:	Local variable 'f' could be declared final
+src/Tickets.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:52:	Avoid variables with short names like h
+src/Tickets.java:52:	Local variable 'h' could be declared final
+src/Tickets.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:53:	Avoid variables with short names like l
+src/Tickets.java:53:	Local variable 'l' could be declared final
+src/Tickets.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:54:	Avoid variables with short names like k
+src/Tickets.java:54:	Local variable 'k' could be declared final
+src/Tickets.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:55:	Avoid variables with short names like p
+src/Tickets.java:55:	Local variable 'p' could be declared final
+src/Tickets.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:56:	Local variable 'rec' could be declared final
+src/Tickets.java:58:	Avoid instantiating new objects inside loops
+src/Tickets.java:62:	Avoid instantiating new objects inside loops
+src/Tickets.java:64:	Found 'DD'-anomaly for variable 'count' (lines '64'-'64').
+src/Tickets.java:73:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:83:	Parameter 'Name' is not assigned and could be declared final
+src/Tickets.java:83:	Parameter 'SeatNumber' is not assigned and could be declared final
+src/Tickets.java:83:	Parameter 'busNumber' is not assigned and could be declared final
+src/Tickets.java:83:	Parameter 'certificate' is not assigned and could be declared final
+src/Tickets.java:83:	Parameter 'departDate' is not assigned and could be declared final
+src/Tickets.java:83:	Parameter 'lastName' is not assigned and could be declared final
+src/Tickets.java:83:	Parameter 'receiptValue' is not assigned and could be declared final
+src/Tickets.java:83:	Parameter 'retDate' is not assigned and could be declared final
+src/Tickets.java:83:	Variables should start with a lowercase character, 'Name' starts with uppercase character.
+src/Tickets.java:83:	Variables should start with a lowercase character, 'SeatNumber' starts with uppercase character.
+src/Tickets.java:83:	publicMethodCommentRequirement Required
+src/Tickets.java:86:	Ensure that resources like this Connection object are closed after use
+src/Tickets.java:86:	Found 'DD'-anomaly for variable 'conn' (lines '86'-'88').
+src/Tickets.java:87:	Ensure that resources like this Statement object are closed after use
+src/Tickets.java:87:	Found 'DD'-anomaly for variable 'stmt' (lines '87'-'89').
+src/Tickets.java:89:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:91:	Local variable 'sql2' could be declared final
+src/Tickets.java:92:	The String literal "','" appears 6 times in this file; the first occurrence is on line 92
+src/Tickets.java:93:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:96:	Local variable 'sql2' could be declared final
+src/Tickets.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:104:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:107:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:115:	publicMethodCommentRequirement Required
+src/Tickets.java:116:	Found 'DD'-anomaly for variable 'lastNumber' (lines '116'-'127').
+src/Tickets.java:120:	Ensure that resources like this Connection object are closed after use
+src/Tickets.java:120:	Found 'DD'-anomaly for variable 'conn' (lines '120'-'123').
+src/Tickets.java:121:	Ensure that resources like this Statement object are closed after use
+src/Tickets.java:121:	Found 'DD'-anomaly for variable 'stmt' (lines '121'-'124').
+src/Tickets.java:124:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:125:	Avoid variables with short names like rs
+src/Tickets.java:125:	Ensure that resources like this ResultSet object are closed after use
+src/Tickets.java:125:	Local variable 'rs' could be declared final
+src/Tickets.java:125:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:127:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:128:	A method should have only one exit point, and that should be the last statement in the method
+src/Tickets.java:132:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:135:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:148:	Parameter 'busNO' is not assigned and could be declared final
+src/Tickets.java:148:	Parameter 'frame' is not assigned and could be declared final
+src/Tickets.java:148:	Parameter 'seat' is not assigned and could be declared final
+src/Tickets.java:148:	publicMethodCommentRequirement Required
+src/Tickets.java:150:	Ensure that resources like this Connection object are closed after use
+src/Tickets.java:150:	Found 'DD'-anomaly for variable 'conn' (lines '150'-'154').
+src/Tickets.java:151:	Ensure that resources like this Statement object are closed after use
+src/Tickets.java:151:	Found 'DD'-anomaly for variable 'stmt' (lines '151'-'155').
+src/Tickets.java:152:	Found 'DD'-anomaly for variable 'SeatNumber' (lines '152'-'160').
+src/Tickets.java:152:	Variables should start with a lowercase character, 'SeatNumber' starts with uppercase character.
+src/Tickets.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:157:	Avoid variables with short names like rs
+src/Tickets.java:157:	Do not add empty strings
+src/Tickets.java:157:	Ensure that resources like this ResultSet object are closed after use
+src/Tickets.java:157:	Local variable 'rs' could be declared final
+src/Tickets.java:157:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:158:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:160:	Found 'DD'-anomaly for variable 'SeatNumber' (lines '160'-'160').
+src/Tickets.java:164:	A method should have only one exit point, and that should be the last statement in the method
+src/Tickets.java:167:	A method should have only one exit point, and that should be the last statement in the method
+src/Tickets.java:174:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:174:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:184:	Avoid variables with short names like id
+src/Tickets.java:184:	Method names should not start with capital letters
+src/Tickets.java:184:	Parameter 'id' is not assigned and could be declared final
+src/Tickets.java:184:	publicMethodCommentRequirement Required
+src/Tickets.java:185:	Found 'DD'-anomaly for variable 'check' (lines '185'-'201').
+src/Tickets.java:189:	Ensure that resources like this Connection object are closed after use
+src/Tickets.java:189:	Found 'DD'-anomaly for variable 'conn' (lines '189'-'193').
+src/Tickets.java:190:	Ensure that resources like this Statement object are closed after use
+src/Tickets.java:190:	Found 'DD'-anomaly for variable 'stmt' (lines '190'-'195').
+src/Tickets.java:191:	Ensure that resources like this Statement object are closed after use
+src/Tickets.java:191:	Found 'DD'-anomaly for variable 'stmt1' (lines '191'-'196').
+src/Tickets.java:195:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:196:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:199:	Do not add empty strings
+src/Tickets.java:199:	Local variable 'sql' could be declared final
+src/Tickets.java:200:	Local variable 'count' could be declared final
+src/Tickets.java:200:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:201:	Useless parentheses.
+src/Tickets.java:204:	Local variable 'incrToZero' could be declared final
+src/Tickets.java:205:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:210:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:210:	Potential violation of Law of Demeter (object not created locally)
+src/Tickets.java:213:	Avoid printStackTrace(); use a logger call instead.
+src/Tickets.java:213:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:4:	Avoid unused imports such as 'javax.annotation.processing.Messager'
+src/Users.java:5:	Avoid unused imports such as 'javax.swing.JPanel'
+src/Users.java:6:	Avoid unused imports such as 'javax.swing.JTable'
+src/Users.java:10:	Avoid unused imports such as 'java.text.DateFormat'
+src/Users.java:11:	Avoid unused imports such as 'java.text.ParseException'
+src/Users.java:12:	Avoid unused imports such as 'java.text.SimpleDateFormat'
+src/Users.java:13:	Avoid unused imports such as 'java.time.LocalDate'
+src/Users.java:14:	Avoid unused imports such as 'java.util.Date'
+src/Users.java:16:	All classes and interfaces must belong to a named package
+src/Users.java:16:	headerCommentRequirement Required
+src/Users.java:17:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/Users.java:19:	fieldCommentRequirement Required
+src/Users.java:20:	fieldCommentRequirement Required
+src/Users.java:22:	The String literal "com.mysql.jdbc.Driver" appears 4 times in this file; the first occurrence is on line 22
+src/Users.java:22:	To avoid mistakes add a comment at the beginning of the JDBC_DRIVER field if you want a default access modifier
+src/Users.java:22:	Use explicit scoping instead of the default package private level
+src/Users.java:22:	fieldCommentRequirement Required
+src/Users.java:23:	To avoid mistakes add a comment at the beginning of the connectionURL field if you want a default access modifier
+src/Users.java:23:	Use explicit scoping instead of the default package private level
+src/Users.java:23:	Variables that are final and static should be all capitals, 'connectionURL' is not all capitals.
+src/Users.java:23:	fieldCommentRequirement Required
+src/Users.java:26:	Avoid excessively long variable names like usernamefordatabase
+src/Users.java:26:	To avoid mistakes add a comment at the beginning of the usernamefordatabase field if you want a default access modifier
+src/Users.java:26:	Use explicit scoping instead of the default package private level
+src/Users.java:26:	Variables that are final and static should be all capitals, 'usernamefordatabase' is not all capitals.
+src/Users.java:26:	fieldCommentRequirement Required
+src/Users.java:27:	Avoid excessively long variable names like passwordfordatabase
+src/Users.java:27:	To avoid mistakes add a comment at the beginning of the passwordfordatabase field if you want a default access modifier
+src/Users.java:27:	Use explicit scoping instead of the default package private level
+src/Users.java:27:	Variables that are final and static should be all capitals, 'passwordfordatabase' is not all capitals.
+src/Users.java:27:	fieldCommentRequirement Required
+src/Users.java:32:	Method names should not start with capital letters
+src/Users.java:32:	Parameter 'Password' is not assigned and could be declared final
+src/Users.java:32:	Parameter 'username' is not assigned and could be declared final
+src/Users.java:32:	Variables should start with a lowercase character, 'Password' starts with uppercase character.
+src/Users.java:32:	publicMethodCommentRequirement Required
+src/Users.java:37:	Ensure that resources like this Connection object are closed after use
+src/Users.java:37:	Found 'DD'-anomaly for variable 'conn' (lines '37'-'40').
+src/Users.java:38:	Ensure that resources like this Statement object are closed after use
+src/Users.java:38:	Found 'DD'-anomaly for variable 'stmt' (lines '38'-'41').
+src/Users.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:42:	Avoid variables with short names like rs
+src/Users.java:42:	Ensure that resources like this ResultSet object are closed after use
+src/Users.java:42:	Local variable 'rs' could be declared final
+src/Users.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:44:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:47:	Local variable 'nameFromDb' could be declared final
+src/Users.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/Users.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/Users.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/Users.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:47:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/Users.java:48:	Local variable 'passwordFromDb' could be declared final
+src/Users.java:48:	Potential violation of Law of Demeter (method chain calls)
+src/Users.java:48:	Potential violation of Law of Demeter (method chain calls)
+src/Users.java:48:	Potential violation of Law of Demeter (method chain calls)
+src/Users.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:48:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/Users.java:49:	Found 'DD'-anomaly for variable 'accesslvl' (lines '49'-'49').
+src/Users.java:49:	Found 'DU'-anomaly for variable 'accesslvl' (lines '49'-'94').
+src/Users.java:49:	Local variable 'accesslvl' could be declared final
+src/Users.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:50:	Avoid instantiating new objects inside loops
+src/Users.java:50:	Found 'DD'-anomaly for variable 'login' (lines '50'-'50').
+src/Users.java:50:	Found 'DU'-anomaly for variable 'login' (lines '50'-'94').
+src/Users.java:50:	Local variable 'login' could be declared final
+src/Users.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:51:	Useless parentheses.
+src/Users.java:51:	Useless parentheses.
+src/Users.java:54:	Useless parentheses.
+src/Users.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:80:	Singleton is not thread safe
+src/Users.java:89:	Avoid printStackTrace(); use a logger call instead.
+src/Users.java:89:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:92:	Avoid printStackTrace(); use a logger call instead.
+src/Users.java:92:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:96:	Method names should not start with capital letters
+src/Users.java:96:	publicMethodCommentRequirement Required
+src/Users.java:101:	publicMethodCommentRequirement Required
+src/Users.java:102:	Found 'DU'-anomaly for variable 'success1' (lines '102'-'111').
+src/Users.java:102:	Local variable 'success1' could be declared final
+src/Users.java:104:	Local variable 'success11' could be declared final
+src/Users.java:105:	A method should have only one exit point, and that should be the last statement in the method
+src/Users.java:105:	Consider simply returning the value vs storing it in local variable 'success11'
+src/Users.java:116:	Method names should not start with capital letters
+src/Users.java:116:	Parameter 'AccessLVL' is not assigned and could be declared final
+src/Users.java:116:	Parameter 'Password' is not assigned and could be declared final
+src/Users.java:116:	Parameter 'Username' is not assigned and could be declared final
+src/Users.java:116:	Variables should start with a lowercase character, 'AccessLVL' starts with uppercase character.
+src/Users.java:116:	Variables should start with a lowercase character, 'Password' starts with uppercase character.
+src/Users.java:116:	Variables should start with a lowercase character, 'Username' starts with uppercase character.
+src/Users.java:116:	publicMethodCommentRequirement Required
+src/Users.java:121:	Ensure that resources like this Connection object are closed after use
+src/Users.java:121:	Found 'DD'-anomaly for variable 'conn' (lines '121'-'124').
+src/Users.java:122:	Ensure that resources like this Statement object are closed after use
+src/Users.java:122:	Found 'DD'-anomaly for variable 'stmt' (lines '122'-'125').
+src/Users.java:125:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:126:	Local variable 'sql' could be declared final
+src/Users.java:128:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:133:	Avoid printStackTrace(); use a logger call instead.
+src/Users.java:133:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:136:	Avoid printStackTrace(); use a logger call instead.
+src/Users.java:136:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:145:	Method names should not start with capital letters
+src/Users.java:145:	Parameter 'model' is not assigned and could be declared final
+src/Users.java:145:	publicMethodCommentRequirement Required
+src/Users.java:147:	Ensure that resources like this Connection object are closed after use
+src/Users.java:147:	Found 'DD'-anomaly for variable 'conn' (lines '147'-'150').
+src/Users.java:148:	Ensure that resources like this Statement object are closed after use
+src/Users.java:148:	Found 'DD'-anomaly for variable 'stmt' (lines '148'-'151').
+src/Users.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:152:	Avoid variables with short names like rs
+src/Users.java:152:	Ensure that resources like this ResultSet object are closed after use
+src/Users.java:152:	Local variable 'rs' could be declared final
+src/Users.java:152:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:155:	Avoid variables with short names like id
+src/Users.java:155:	Local variable 'id' could be declared final
+src/Users.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:156:	Avoid variables with short names like d
+src/Users.java:156:	Local variable 'd' could be declared final
+src/Users.java:156:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:157:	Avoid variables with short names like e
+src/Users.java:157:	Local variable 'e' could be declared final
+src/Users.java:157:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:158:	Avoid variables with short names like f
+src/Users.java:158:	Local variable 'f' could be declared final
+src/Users.java:158:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:159:	Avoid instantiating new objects inside loops
+src/Users.java:165:	Avoid printStackTrace(); use a logger call instead.
+src/Users.java:165:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:177:	Avoid variables with short names like id
+src/Users.java:177:	Method names should not start with capital letters
+src/Users.java:177:	Parameter 'id' is not assigned and could be declared final
+src/Users.java:177:	publicMethodCommentRequirement Required
+src/Users.java:178:	Found 'DD'-anomaly for variable 'check' (lines '178'-'194').
+src/Users.java:182:	Ensure that resources like this Connection object are closed after use
+src/Users.java:182:	Found 'DD'-anomaly for variable 'conn' (lines '182'-'186').
+src/Users.java:183:	Ensure that resources like this Statement object are closed after use
+src/Users.java:183:	Found 'DD'-anomaly for variable 'stmt' (lines '183'-'188').
+src/Users.java:184:	Ensure that resources like this Statement object are closed after use
+src/Users.java:184:	Found 'DD'-anomaly for variable 'stmt1' (lines '184'-'189').
+src/Users.java:188:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:189:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:192:	Do not add empty strings
+src/Users.java:192:	Local variable 'sql' could be declared final
+src/Users.java:193:	Local variable 'count' could be declared final
+src/Users.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:194:	Useless parentheses.
+src/Users.java:197:	Local variable 'incrToZero' could be declared final
+src/Users.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:203:	Avoid printStackTrace(); use a logger call instead.
+src/Users.java:203:	Potential violation of Law of Demeter (object not created locally)
+src/Users.java:206:	Avoid printStackTrace(); use a logger call instead.
+src/Users.java:206:	Potential violation of Law of Demeter (object not created locally)
+src/org/eclipse/wb/swing/DateLabelFormatter.java:9:	Each class should declare at least one constructor
+src/org/eclipse/wb/swing/DateLabelFormatter.java:9:	headerCommentRequirement Required
+src/org/eclipse/wb/swing/DateLabelFormatter.java:11:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/org/eclipse/wb/swing/DateLabelFormatter.java:11:	Private field 'datePattern' could be made final; it is only initialized in the declaration or constructor.
+src/org/eclipse/wb/swing/DateLabelFormatter.java:11:	fieldCommentRequirement Required
+src/org/eclipse/wb/swing/DateLabelFormatter.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/org/eclipse/wb/swing/DateLabelFormatter.java:12:	Private field 'dateFormatter' could be made final; it is only initialized in the declaration or constructor.
+src/org/eclipse/wb/swing/DateLabelFormatter.java:12:	When instantiating a SimpleDateFormat object, specify a Locale
+src/org/eclipse/wb/swing/DateLabelFormatter.java:12:	fieldCommentRequirement Required
+src/org/eclipse/wb/swing/DateLabelFormatter.java:15:	Parameter 'text' is not assigned and could be declared final
+src/org/eclipse/wb/swing/DateLabelFormatter.java:15:	publicMethodCommentRequirement Required
+src/org/eclipse/wb/swing/DateLabelFormatter.java:20:	Parameter 'value' is not assigned and could be declared final
+src/org/eclipse/wb/swing/DateLabelFormatter.java:20:	publicMethodCommentRequirement Required
+src/org/eclipse/wb/swing/DateLabelFormatter.java:22:	Local variable 'cal' could be declared final
+src/org/eclipse/wb/swing/DateLabelFormatter.java:23:	A method should have only one exit point, and that should be the last statement in the method
+src/org/eclipse/wb/swing/DateLabelFormatter.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:1:	Comment is too large: Too many lines
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:25:	fieldCommentRequirement Required
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:31:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:31:	It is a good practice to call super() in a constructor
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:31:	Parameter 'components' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:31:	The user-supplied array 'components' is stored directly.
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:31:	publicMethodCommentRequirement Required
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:39:	Parameter 'delta' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:39:	Parameter 'index' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:40:	Local variable 'size' could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:41:	Local variable 'next' could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:42:	Consider simply returning the value vs storing it in local variable 'next'
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:44:	Parameter 'currentComponent' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:44:	Parameter 'delta' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:45:	Found 'DD'-anomaly for variable 'index' (lines '45'-'50').
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:47:	Found 'DD'-anomaly for variable 'component' (lines '47'-'47').
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:47:	Found 'DD'-anomaly for variable 'component' (lines '47'-'64').
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:47:	Found 'DU'-anomaly for variable 'component' (lines '47'-'71').
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:47:	Local variable 'component' could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:49:	Use equals() to compare object references.
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:56:	Found 'DU'-anomaly for variable 'initialIndex' (lines '56'-'71').
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:56:	Local variable 'initialIndex' could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:58:	Local variable 'newIndex' could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:62:	Found 'DU'-anomaly for variable 'index' (lines '62'-'71').
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:64:	Local variable 'component' could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:66:	A method should have only one exit point, and that should be the last statement in the method
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:77:	Parameter 'component' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:77:	Parameter 'container' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:77:	publicMethodCommentRequirement Required
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:80:	Parameter 'component' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:80:	Parameter 'container' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:80:	publicMethodCommentRequirement Required
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:83:	Parameter 'container' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:83:	publicMethodCommentRequirement Required
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:86:	Parameter 'container' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:86:	publicMethodCommentRequirement Required
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:89:	Parameter 'container' is not assigned and could be declared final
+src/org/eclipse/wb/swing/FocusTraversalOnArray.java:89:	publicMethodCommentRequirement Required

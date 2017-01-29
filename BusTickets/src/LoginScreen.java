@@ -38,7 +38,6 @@ import java.awt.FlowLayout;
 
 public class LoginScreen extends JFrame {
 
-	private JFrame loginframe;
 	private JPanel contentPane;
 	private JPasswordField passwordField;
 	private JLabel lblUsername;
@@ -66,6 +65,7 @@ public class LoginScreen extends JFrame {
 	 * Create the frame.
 	 */
 	public LoginScreen() {
+		setTitle("EZTravel");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 690, 510);
 		contentPane = new JPanel();
