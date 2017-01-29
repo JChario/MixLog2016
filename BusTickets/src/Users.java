@@ -111,6 +111,7 @@ public class Users
 		}
 		
 		
+		
 		//insert a new user to db
 		public static void UpdateDB(String Username,String Password, int AccessLVL) 
 		{
@@ -135,6 +136,11 @@ public class Users
 				e.printStackTrace();
 			} 
 		}
+		
+		
+		
+		
+		
 	 //print table inside admin panel.
 		public static DefaultTableModel PrintTableUsers(DefaultTableModel model)
 		{

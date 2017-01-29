@@ -31,6 +31,9 @@ import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
+
+import com.mysql.jdbc.StringUtils;
+
 import javax.swing.SwingConstants;
 import java.awt.SystemColor;
 import javax.swing.DropMode;
@@ -45,7 +48,7 @@ public class CashierSearchAndDelete {
 	private JFrame frame;
 	private JTextField TicketNumber;
 	private JTable table;
-	public DefaultTableModel model = new DefaultTableModel(new String[]{"ID","CustomerName", "CustomerLastName", "IDNumber","Departure Date", "Return Date", "Receipt Type"}, 0);
+	public DefaultTableModel model = new DefaultTableModel(new String[]{"ID","CustomerName", "CustomerLastName", "IDNumber","Departure Date", "Return Date","Bus Number","Seat Number", "Receipt Type"}, 0);
 
 	/**
 	 * Launch the application.
@@ -106,6 +109,7 @@ public class CashierSearchAndDelete {
 		frame.getContentPane().add(btnLogOut);
 		
 		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
 		scrollPane.setBounds(10, 184, 654, 102);
 		frame.getContentPane().add(scrollPane);
 		
@@ -123,6 +127,7 @@ public class CashierSearchAndDelete {
 		btnDelete.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent arg0) {
+				
 				//get selected row
 				int row = table.getSelectedRow();
 				//if administrator selected a row then proceed
@@ -130,7 +135,7 @@ public class CashierSearchAndDelete {
 					//get the first value(id) so we can delete the selected user.
 					Object selectedID = GetDataFromTable(row,0);
 					//show messages(error/success)
-					if (Users.DeleteUser(selectedID)){
+					if (Tickets.DeleteTicket(selectedID)){
 						int modelRow = table.convertRowIndexToModel( row );
 						model.removeRow( modelRow );
 						JOptionPane.showMessageDialog(frame, "~Ticket~\nId: " + selectedID + "\nTicketNumber:"+selectedID+"\nHas been removed successfully!!", "Success!!", JOptionPane.INFORMATION_MESSAGE);
@@ -139,6 +144,7 @@ public class CashierSearchAndDelete {
 					{
 						JOptionPane.showMessageDialog(frame, "Couldn't delete the ticket with id: "+selectedID+".\nSomething went wrong.\nContact info@bustickets.gr","Error..", JOptionPane.ERROR_MESSAGE);
 					}
+					refreshTable();
 					
 				}
 					
@@ -150,23 +156,28 @@ public class CashierSearchAndDelete {
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				refreshTable();
 				String number = TicketNumber.getText().toString().trim();
-				int id = Integer.parseInt(number);
-				Tickets.PrintTableTickets(model, id);
+				boolean isINT = StringUtils.isStrictlyNumeric(number);
+				if (isINT){
+					//parse them to int
+					int id = Integer.parseInt(number);
+					Tickets.PrintTableTickets(frame,model, id);
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(frame, "You didn't give a number!","Please insert a number", JOptionPane.ERROR_MESSAGE);
+					return;
+				}
 			}
 		});
 		btnSearch.setBounds(10, 150, 89, 23);
 		frame.getContentPane().add(btnSearch);
-		
-		JButton btnNewButton = new JButton("Clear");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				model.setRowCount(0);
-			}
-		});
-		btnNewButton.setBounds(575, 316, 89, 23);
-		frame.getContentPane().add(btnNewButton);
 		//JScrollPane scrollPane = new JScrollPane(table);
+		
+	}
+	public void refreshTable(){
+		model.setRowCount(0);
 		
 	}
 	public Object GetDataFromTable(int row_index, int col_index){

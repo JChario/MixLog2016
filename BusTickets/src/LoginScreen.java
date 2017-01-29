@@ -13,6 +13,8 @@ import javax.swing.JTextArea;
 import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
+import javax.swing.JRootPane;
+
 import java.awt.Canvas;
 import java.awt.Panel;
 import javax.swing.JButton;
@@ -27,7 +29,10 @@ import java.awt.event.KeyEvent;
 import javax.swing.border.BevelBorder;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Frame;
+
 import javax.swing.DropMode;
+import java.awt.FlowLayout;
 
 
 
@@ -70,7 +75,7 @@ public class LoginScreen extends JFrame {
 		
 		passwordField = new JPasswordField();
 		passwordField.setToolTipText("Insert Password ");
-		passwordField.setBounds(327, 306, 124, 20);
+		passwordField.setBounds(320, 348, 124, 20);
 		contentPane.add(passwordField);
 		
 		JButton loginbutton = new JButton("Login");
@@ -95,29 +100,31 @@ public class LoginScreen extends JFrame {
 			}
 		});
 		
-		loginbutton.setBounds(222, 358, 229, 23);
+		loginbutton.setBounds(215, 400, 229, 23);
 		contentPane.add(loginbutton);
 		
 		lblUsername = new JLabel("Username:");
-		lblUsername.setBounds(222, 278, 74, 20);
+		lblUsername.setBounds(215, 320, 74, 20);
 		contentPane.add(lblUsername);
 		
 		lblPassword = new JLabel("Password:");
-		lblPassword.setBounds(222, 309, 74, 20);
+		lblPassword.setBounds(215, 351, 74, 20);
 		contentPane.add(lblPassword);
 		
 		usernameField = new JTextField();
-		usernameField.setBounds(327, 275, 124, 20);
+		usernameField.setBounds(320, 317, 124, 20);
 		contentPane.add(usernameField);
 		usernameField.setColumns(10);
 		
 		JPanel panel = new JPanel();
 		panel.setToolTipText("\u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2 \u0399\u03C9\u03AC\u03BD\u03BD\u03B7\u03C2:42625///\r\n\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2:41803///\r\n\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03CE\u03BD/\u03BD\u03BF\u03C2:41795");
 		panel.setBorder(new BevelBorder(BevelBorder.RAISED, Color.GRAY, Color.BLACK, Color.GRAY, Color.BLACK));
-		panel.setBounds(42, 23, 596, 225);
+		panel.setBounds(42, 23, 597, 269);
 		contentPane.add(panel);
+		panel.setLayout(null);
 		
 		textArea_2 = new JTextArea();
+		textArea_2.setBounds(2, 7, 339, 72);
 		textArea_2.setWrapStyleWord(true);
 		textArea_2.setToolTipText("");
 		textArea_2.setText("\u03A4\u0395\u0399 \u03A0\u0395\u0399\u03A1\u0391\u0399\u0391");
@@ -129,6 +136,7 @@ public class LoginScreen extends JFrame {
 		panel.add(textArea_2);
 		
 		JTextArea textArea = new JTextArea();
+		textArea.setBounds(2, 90, 584, 72);
 		textArea.setColumns(12);
 		textArea.setBackground(new Color(0,0,0,0));
 		textArea.setEditable(false);
@@ -138,6 +146,30 @@ public class LoginScreen extends JFrame {
 		textArea.setLineWrap(true);
 		textArea.setText("\u039C\u03B7\u03C7\u03B1\u03BD\u03B9\u03BA\u03AE \u039B\u03BF\u03B3\u03B9\u03C3\u03BC\u03B9\u03BA\u03BF\u03CD");
 		panel.add(textArea);
+		
+		JLabel label = new JLabel("\u0399\u03C9\u03B1\u03BD\u03BD\u03B7\u03C2 \u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2");
+		label.setBounds(12, 178, 175, 14);
+		panel.add(label);
+		
+		JLabel label_1 = new JLabel("\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03C9\u03BD/\u03BD\u03BF\u03C2");
+		label_1.setBounds(12, 203, 175, 14);
+		panel.add(label_1);
+		
+		JLabel label_2 = new JLabel("\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2");
+		label_2.setBounds(12, 228, 175, 14);
+		panel.add(label_2);
+		
+		JLabel label_3 = new JLabel("42625");
+		label_3.setBounds(144, 178, 43, 14);
+		panel.add(label_3);
+		
+		JLabel label_4 = new JLabel("41803");
+		label_4.setBounds(144, 203, 43, 14);
+		panel.add(label_4);
+		
+		JLabel label_5 = new JLabel("41795");
+		label_5.setBounds(144, 228, 43, 14);
+		panel.add(label_5);
 		contentPane.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{passwordField, loginbutton}));
 		
 

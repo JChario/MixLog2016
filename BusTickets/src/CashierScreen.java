@@ -31,6 +31,8 @@ import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.awt.event.ActionEvent;
+
+import com.mysql.jdbc.StringUtils;
 import com.toedter.calendar.JCalendar;
 import com.toedter.calendar.JDateChooser;
 import com.toedter.components.JLocaleChooser;
@@ -60,6 +62,7 @@ import javax.swing.JToolBar;
 import javax.swing.JLayeredPane;
 import javax.swing.JSeparator;
 import javax.swing.JComboBox;
+import javax.swing.JSpinner;
 
 
 public class CashierScreen {
@@ -75,6 +78,8 @@ public class CashierScreen {
 	private JTextField CertificateField;
 	private JTextField ticketNO;
 	private JTextField NameField;
+	private JTextField SeatChosenField;
+	private JComboBox comboBox = new JComboBox();
 
 	/**
 	 * Launch the application.
@@ -142,9 +147,29 @@ public class CashierScreen {
 		separator.setBounds(208, 99, 262, 2);
 		frame.getContentPane().add(separator);
 		
-		JComboBox comboBox = new JComboBox();
+		
 		comboBox.setBounds(208, 111, 262, 20);
 		frame.getContentPane().add(comboBox);
+		//view busses
+		Busses.ViewBussesDropdown(comboBox);
+		
+		JLabel NumberOfSeats = new JLabel("");
+		NumberOfSeats.setBounds(323, 142, 56, 14);
+		frame.getContentPane().add(NumberOfSeats);
+		
+		JLabel label_1 = new JLabel("\u0398\u03AD\u03C3\u03B7");
+		label_1.setBounds(208, 161, 65, 14);
+		frame.getContentPane().add(label_1);
+		
+		SeatChosenField = new JTextField();
+		SeatChosenField.setHorizontalAlignment(SwingConstants.CENTER);
+		SeatChosenField.setBounds(208, 186, 86, 20);
+		frame.getContentPane().add(SeatChosenField);
+		SeatChosenField.setColumns(10);
+		
+		
+		
+		
 	}
 
 	/**
@@ -152,11 +177,7 @@ public class CashierScreen {
 	 */
 	void loadDates(){
 		
-		//get date of return
-		//Date retdate = calendar1.getDate();
-		//String returnDate = df.format(retdate);
-		//returnDateField.setText(returnDate);
-		
+		//get date of departure
 		Date departdate = calendar.getDate();
 		String departureDate = df.format(departdate);
 		departureDateField.setText(departureDate);
@@ -298,80 +319,130 @@ public class CashierScreen {
 		btnE.setToolTipText("\u03A0\u03B1\u03C4\u03CE\u03BD\u03C4\u03B1\u03C2 \u03B5\u03BA\u03C4\u03CD\u03C0\u03C9\u03C3\u03B7 \u03BA\u03B1\u03C4\u03B1\u03C7\u03C9\u03C1\u03BF\u03CD\u03BD\u03C4\u03B1\u03B9 \u03C3\u03C4\u03BF \u03C3\u03CD\u03C3\u03C4\u03B7\u03BC\u03B1 \u03C4\u03B1 \u03C3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1");
 		btnE.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
-				String name = NameField.getText().trim().toLowerCase().toString();
-				String lastname = LastNameField.getText().trim().toLowerCase().toString();
-				String cert = CertificateField.getText().trim().toLowerCase().toString();
-				//check if all fields are filled
-				int countErrors=0;
-				if (NameField.getText().equals("")){
-					JOptionPane.showMessageDialog(frame, "You didn't filled a name.",name, JOptionPane.ERROR_MESSAGE, null);
-					countErrors++;
+				//initialize variable
+				boolean available = false;
+				//get Seat number inserted
+				String seat = SeatChosenField.getText().toString().trim().toLowerCase();
+				//get the whole string from dropdown
+				//split the string to -
+				//get first part and trim spaces
+				//then check if available
+				String bus = String.valueOf(comboBox.getSelectedItem());
+				String[] parts = bus.split("-");
+				String busNO = parts[0].trim(); 
+				//check if they are ONLY int
+				boolean isINTbusNO = StringUtils.isStrictlyNumeric(busNO);
+				boolean isINTseat = StringUtils.isStrictlyNumeric(seat);
+				if (isINTseat && isINTbusNO){
+					//parse them to int
+ 					int busnumber = Integer.parseInt(busNO);
+ 					int busseat = Integer.parseInt(seat);
+ 					//check availability
+ 					available = Tickets.checkAvailability(frame,busseat,busnumber);
+ 					int MaxSeatsAvailable = Busses.maxValue(busseat,busnumber);
+ 					//if seat is available take the rest of the textfield and check them
+ 					if (busseat <= MaxSeatsAvailable )
+ 					{
+ 						if (available)
+ 	 					{	
+ 	 						String name = NameField.getText().trim().toLowerCase().toString();
+ 	 						String lastname = LastNameField.getText().trim().toLowerCase().toString();
+ 	 						String cert = CertificateField.getText().trim().toLowerCase().toString();
+ 	 						//check if all fields are filled
+ 	 						int countErrors=0;
+ 	 						if (NameField.getText().equals("")){
+ 	 							JOptionPane.showMessageDialog(frame, "You didn't filled a name.","Wrong Name", JOptionPane.ERROR_MESSAGE, null);
+ 	 							countErrors++;
+ 	 						}
+ 	 						if (LastNameField.getText().equals("")){
+ 	 							JOptionPane.showMessageDialog(frame, "You didn't filled a LastName.","Wrong LastName", JOptionPane.ERROR_MESSAGE, null);
+ 	 							countErrors++;
+ 	 						}
+ 	 						if (CertificateField.getText().equals("")){
+ 	 							JOptionPane.showMessageDialog(frame, "You didn't filled an ID Number.","Wrong ID Number", JOptionPane.ERROR_MESSAGE, null);
+ 	 							countErrors++;
+ 	 						}
+ 	 						//if they aren't return
+ 	 						if (countErrors > 0){
+ 	 							return;
+ 	 						}
+ 	 						else
+ 	 						{
+ 	 							//get return date/departure date && receiptValue to store them in db
+ 	 							String retDate = returnDateField.getText().toString();
+ 	 							String departDate = departureDateField.getText().toString();
+ 	 							boolean receiptValue = receipt.isSelected();
+ 	 							
+ 	 							//start trascoding string to sql.date morph to be ready to be inserted to db
+ 	 					        Date parsed = null;
+ 	 					        java.sql.Date returnDate = null;
+ 	 					        if (returnDateField.getText().toString().equals("")){
+ 	 					        	JOptionPane.showMessageDialog(frame, "The ticket is stored without a return date","Return Date = NULL", JOptionPane.WARNING_MESSAGE, null);
+ 	 					        }
+ 	 					        else
+ 	 					        {
+ 	 								try {
+ 	 									parsed = df.parse(retDate);
+ 	 								} catch (ParseException e1) {
+ 	 									// TODO Auto-generated catch block
+ 	 									e1.printStackTrace();
+ 	 								}
+ 	 								returnDate = new java.sql.Date(parsed.getTime());
+ 	 					        }
+ 	 					       
+ 	 					        
+ 	 			
+ 	 							
+ 	 					        Date parsed1 = null;
+ 	 							try {
+ 	 								parsed1 = df.parse(departDate);
+ 	 							} catch (ParseException e1) {
+ 	 								// TODO Auto-generated catch block
+ 	 								e1.printStackTrace();
+ 	 							}
+ 	 							java.sql.Date  departureDate = new java.sql.Date(parsed1.getTime());
+ 	 							
+ 	 							
+ 	 					   
+ 	 							 //save to db
+ 	 					        
+ 	 					        	Tickets.saveTickets(name, lastname, cert, returnDate, departureDate, busnumber, busseat, receiptValue);
+ 	 					       
+ 	 							
+ 	 							
+ 	 							//reset all values to defaults so the cashier can select new ticket.
+ 	 							int lastNumber = last();
+ 	 							
+ 	 							ticketNO.setText(String.valueOf(lastNumber+1));
+ 	 							NameField.setText(null);
+ 	 							LastNameField.setText(null);
+ 	 							CertificateField.setText(null);
+ 	 							returnDateField.setText(null);
+ 	 							SeatChosenField.setText(null);
+ 	 							
+ 	 							PrinterJob pj = PrinterJob.getPrinterJob();
+ 	 							PageFormat pf = pj.pageDialog(pj.defaultPage());
+ 	 						}
+ 	 					}
+ 	 					else
+ 	 					{
+ 	 						return;
+ 	 					}
+ 					}
+ 					else
+ 					{
+ 						JOptionPane.showMessageDialog(frame, "Max Number of Seats: "+ MaxSeatsAvailable ,"Available Seats", JOptionPane.ERROR_MESSAGE);
+ 						return;
+ 					}
+ 					
 				}
-				if (LastNameField.getText().equals("")){
-					JOptionPane.showMessageDialog(frame, "You didn't filled a LastName.",lastname, JOptionPane.ERROR_MESSAGE, null);
-					countErrors++;
-				}
-				if (CertificateField.getText().equals("")){
-					JOptionPane.showMessageDialog(frame, "You didn't filled an ID Number.",cert, JOptionPane.ERROR_MESSAGE, null);
-					countErrors++;
-				}
-				//if they aren't return
-				if (countErrors > 0){
+				else
+				{
+					JOptionPane.showMessageDialog(frame, "Please insert a number on seat!\n","Seat is not a number!", JOptionPane.ERROR_MESSAGE);
 					return;
 				}
-				//get return date/departure date/ticketnumber && receiptValue to store them in db
-				int ticketnumber = Integer.parseInt(ticketNO.getText());
-				String retDate = returnDateField.getText().toString();
-				String departDate = departureDateField.getText().toString();
-				boolean receiptValue = receipt.isSelected();
-				
-				//start trascoding string to sql.date morph to be ready to be inserted to db
-		        Date parsed = null;
-		        java.sql.Date returnDate = null;
-		        if (returnDateField.getText().toString().equals("")){
-		        	JOptionPane.showMessageDialog(frame, "The ticket is stored without a return date",retDate, JOptionPane.WARNING_MESSAGE, null);
-		        }
-		        else
-		        {
-					try {
-						parsed = df.parse(retDate);
-					} catch (ParseException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-					returnDate = new java.sql.Date(parsed.getTime());
-		        }
-		       
-		        
 
 				
-		        Date parsed1 = null;
-				try {
-					parsed1 = df.parse(departDate);
-				} catch (ParseException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-				java.sql.Date  departureDate = new java.sql.Date(parsed1.getTime());
-		   
-				 //save to db
-		        
-		        	Tickets.saveTickets(name,lastname,cert,ticketnumber,returnDate,departureDate, receiptValue);
-		       
-				
-				
-				//reset all values to defaults so the cashier can select new ticket.
-				int lastNumber = last();
-				ticketNO.setText(String.valueOf(lastNumber+1));
-				NameField.setText(null);
-				LastNameField.setText(null);
-				CertificateField.setText(null);
-				returnDateField.setText(null);
-				departureDateField.setText(null);
-				
-				PrinterJob pj = PrinterJob.getPrinterJob();
-				PageFormat pf = pj.pageDialog(pj.defaultPage());
 			}
 		});
 		btnE.setBounds(21, 437, 177, 23);
@@ -440,6 +511,11 @@ public class CashierScreen {
 		
 		
 		frame.getContentPane().add(label_7);
+		
+		
+		
+		
+		
 	}
 	int last(){
 		int lastNumber = Tickets.getnextTicketNo();
