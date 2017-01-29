@@ -117,7 +117,7 @@ public class LoginScreen extends JFrame {
 		usernameField.setColumns(10);
 		
 		JPanel panel = new JPanel();
-		panel.setToolTipText("\u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2 \u0399\u03C9\u03AC\u03BD\u03BD\u03B7\u03C2:42625///\r\n\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2:41803///\r\n\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03CE\u03BD/\u03BD\u03BF\u03C2:41795");
+		panel.setToolTipText("\u03A7\u03B1\u03C1\u03B9\u03C4\u03BF\u03C2 \u0399\u03C9\u03AC\u03BD\u03BD\u03B7\u03C2:42625///\r\n\u0391\u03BD\u03B4\u03C1\u03AD\u03B1\u03C2 \u039C\u03AD\u03C1\u03B1\u03C2:41795///\r\n\u039D\u03C4\u03BF\u03C5\u03BD\u03C4\u03BF\u03CD\u03BC\u03B7\u03C2 \u039A\u03CE\u03BD/\u03BD\u03BF\u03C2:41803");
 		panel.setBorder(new BevelBorder(BevelBorder.RAISED, Color.GRAY, Color.BLACK, Color.GRAY, Color.BLACK));
 		panel.setBounds(42, 23, 597, 269);
 		contentPane.add(panel);
@@ -163,11 +163,11 @@ public class LoginScreen extends JFrame {
 		label_3.setBounds(144, 178, 43, 14);
 		panel.add(label_3);
 		
-		JLabel label_4 = new JLabel("41803");
+		JLabel label_4 = new JLabel("41795");
 		label_4.setBounds(144, 203, 43, 14);
 		panel.add(label_4);
 		
-		JLabel label_5 = new JLabel("41795");
+		JLabel label_5 = new JLabel("41803");
 		label_5.setBounds(144, 228, 43, 14);
 		panel.add(label_5);
 		contentPane.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{passwordField, loginbutton}));

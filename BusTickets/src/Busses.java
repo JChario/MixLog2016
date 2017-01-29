@@ -141,8 +141,8 @@ public class Busses
 			public static boolean success() {
 				boolean success1 = false;
 				if (count>0){
-					boolean success11 = true;
-					return success11;
+					success1 = true;
+					return success1;
 				}
 				else{
 					return success1;
